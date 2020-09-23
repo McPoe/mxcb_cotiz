@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Cotizador MXCB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+  <header style="margin-top: 1em;">
+
+    <div class="hide-on-mobile">
+      <div class="container-fluid"> 
+        <div class="row">
+          <div class="col-lg-5 col-md-4 col-sm-3 ">
+            <img src="https://mexicocrossborder.com/assets/img/mxb_logo.png" alt="" style="height: auto; width: 16em; padding-top: 10px;">
+          </div>
+          <div class="col-lg-7 col-md-8 col-sm-9 col-data_agente">
+            <div class="row" style="justify-content: flex-end;" >
+              <div class="col-xl-10 col-lg-9 col-md-8 col-sm-9">
+                <ul class="info_agente" style="text-align: right;">
+                  <li>AUTHORIZED AGENT</li>
+                  <hr style="margin: 5px;">
+                  <li>DYNAMIC NETWORK INSURANCE SVCS 660 BAY BLVD <br>CHULA VISTA, CA  91910</li>
+                  <li style="padding-top: 10px;">6195858095</li>
+                  <li>correo@agente.com</li>
+                </ul>
+              </div>
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-3" style="text-align: left !important; display: block;">
+                <img src="https://i.ibb.co/LrkbXDw/AUTOEVALUA-CASGRIS.png" alt="Logo Autoevalua" style="height: auto; width: 11em; position: absolute; top: 1em; right: 1em;">
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="show-on-mobile">
+      <div>
+        <img src="https://mexicocrossborder.com/assets/img/mxb_logo.png" alt="" style="height: auto; width: 28vh; padding-bottom: 10px;">
+      </div>
+      <div class="row" style="margin-right: 0px;">
+        <div class="col-sm-12" align="center">
+          <ul class="info_agente" style="text-align: center;">
+            <li>AUTHORIZED AGENT</li>
+            <hr style="margin: 5px;">
+            <li>DYNAMIC NETWORK INSURANCE SVCS 660 BAY BLVD <br>CHULA VISTA, CA  91910</li>
+            <li style="padding-top: 10px;">6195858095</li>
+            <li>correo@agente.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <hr style="background-color: #002868; height: 9px; margin-top: 0px;">
+  
+
+  <div id="wrapper">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <p style="color: #002868; text-transform: uppercase; font-size: 1.6em; text-align: center; font-weight: bold;">Mexico Auto Insurance</p>
+        </div>
+      </div>
+      
+      <hr style="width: 50%; background-color: #002868; margin-top: 0px;">
+      
+      <div class="row justify-content-center submenu_qualitas">
+        <div class="col-lg-3 text-center">
+          
+          <div class="btn-group">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="color: #ce1126; font-size: 12px;">General Conditions</a>
+            <ul class="dropdown-menu">
+              <a href="https://mexicocrossborder.com/dnis/pdfs/generalConditionsOnlineQualitas.pdf" target="_blank"><li>&nbsp;Quálitas</li></a>
+            </ul>
+          </div>
+
+          <div class="btn-group">
+            <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="color: #ce1126; font-size: 12px;">What to do in case of Accident?</a>
+            <ul class="dropdown-menu">
+              <a href="https://mexicocrossborder.com/dnis/pdfs/wtdinoa_QUALITAS2.pdf" target="_blank"><li>&nbsp;Quálitas</li></a>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid" style="margin-top: 2em;">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-8 col-sm-12">
+          <form class="form-horizontal formulario" action="next" method="post">
+              
+              <div class="row form-group">
+                <label class="col-5 control-label" for="days">Days:</label>
+                <div class="col-7">
+                  <select class="form-control" name="days">
+                    <option value="0">Choose Term...</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="row form-group">
+                <label class="col-5 control-label" for="from">From:</label>
+                <div class="col-7">
+                  <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control"/>
+                    <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <label class="col-5 control-label" for="from">To:</label>
+                <div class="col-7">
+                  <div class='input-group date' id='datetimepicker2'>
+                    <input type='text' class="form-control"/>
+                    <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <label class="col-5 control-label" for="from">Drivers under 21?</label>
+                <div class="col-7">
+                  <input type="checkbox" id="checkbox" name="checkbox21" style="width: 20px; height: 20px;">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <label class="col-5 control-label" for="vehicleType">Vehicle Type:</label>
+                <div class="col-7">
+                  <select class="form-control" name="vehicleType">
+                    <option value="0">Choose Vehicle...</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <label class="col-5 control-label" for="ACV">ACV:</label>
+                <div class="col-7">
+                  <select class="form-control" name="ACV">
+                    <option value="0">Choose value...</option>
+                  </select>
+                </div>
+              </div>
+            
+               <div class="row form-group">
+                <label class="col-5 control-label" for="from">Will you be Towing?</label>
+                <div class="col-7">
+                  <input type="checkbox" id="checkboxtow" name="checkbox" style="width: 20px; height: 20px;" onclick="appeartow()">
+                </div>
+              </div>
+
+              <div class="row form-group" id="choosetow" style="display: none;">
+                <label class="col-5 control-label" for="towing">&nbsp;</label>
+                <div class="col-7">
+                  <select class="form-control" name="towing">
+                    <option value="Choose number of towing units">Choose number of towing units...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row form-group justify-content-center">
+                <div class="separador"><button type="submit" class="btn btn-next">NEXT</button></div>
+              </div>
+
+
+             
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer style="bottom: 10px; position: fixed; width: 100%; z-index: 999; border-top: 3px solid #002868; background-color: #FFF;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <p class="text-center" style="margin: 7px 0px; color: #002868; font-size: 11px; font-weight: bold; text-transform: uppercase;">MXCrossBorder powered by Dynamic Network®</p>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="footer_licencias">
+              <p>LIC # 946598 ARIZONA</p>
+              <p>LIC # 0D95560 CALIFORNIA</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="footer_licencias">
+              <p>LIC # 0100311529 ILLINOIS</p>
+              <p>LIC # 699776 NEVADA</p>
+              <p>LIC # 1040418 WASHINGTON</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-xs-12">
+            <div class="footer_licencias">
+              <p>LIC #100011806 NEW MEXICO</p>
+              <p>LIC # 15740053 TEXAS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+<script type="text/javascript">
+    $(function () {
+    $('#datetimepicker1').datetimepicker();
+ });
+
+    $(function () {
+    $('#datetimepicker2').datetimepicker();
+ });
+</script>
+
+<script type="text/javascript">
+  function appeartow() {
+
+  var checkBox = document.getElementById("checkboxtow");
+  // Get the output text
+  var text = document.getElementById("choosetow");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "flex";
+  } else {
+    text.style.display = "none";
+  }
+}
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+</body>
+
+
+
+
+<style type="text/css">
+#wrapper {
+  min-height: 75vh;
+}
+
+.glyphicon{
+  color: #ce1126 !important;
+}
+
+  .show-on-mobile{
+    display: none;
+    visibility: hidden;
+}
+}
+
+.hide-on-mobile{
+    display: block;
+    visibility: visible;
+}
+
+.col-data_agente{
+  float: right !important;
+}
+
+.info_agente{
+    position: relative;
+    right: 2em;
+    color: #002868;
+    text-align: right;
+    list-style: none;
+    font-weight: bold;
+}
+
+.info_agente > li {
+  font-size: 13px;
+}
+
+.info_agente > li:first-child {
+    font-size: 14px; /* limits the scope of the previous rule */
+}
+
+.submenu_qualitas ul{
+  background-color: #002868;
+}
+
+.submenu_qualitas a li{
+  color: #FFF;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer_licencias{
+  text-align: center;
+  color: #757575;
+  font-size: 9px;
+  height: auto;
+}
+
+.footer_licencias p{
+  margin-bottom: 0px;
+}
+
+.btn-next{
+  background-color: #ce1126;
+  color: #FFF;
+  width: 10em;
+  height: 2.5em;
+  font-size: 16px;
+}
+
+.btn-next:hover{
+  background-color: #900a19;
+  color: #FFF;
+  border: solid 1px #ce1126;
+}
+
+@media (max-width: 768px) {
+    .show-on-mobile{
+        display: block;
+        visibility: visible;
+        text-align: center;
+    }    
+    .hide-on-mobile{
+        display: none;
+        visibility: hidden;
+    }
+
+    #wrapper {
+    min-height: 90vh;
+  }
+}
+</style>
+</html>
