@@ -190,6 +190,7 @@
       <div class="row">
         <div class="col-lg-12">
           <p style="color: #002868; font-size: 1.4em; text-align: center; font-weight: bold;"> Your quotation has been saved with number: XXXXX</p>
+          <h5 style="color: #ce1126; text-align: center; font-weight: bold; text-transform: uppercase;">Premiums shown are the least expensive</h5>
         </div>
       </div>
       
@@ -197,130 +198,177 @@
     </div>
 
 
-    <div class="container-fluid" style="margin-top: 1em;">
-      <div class="row justify-content-center">
-        <div class="col-xl-6 col-lg-6 col-md-10 col-sm-12">
-          <div class="row">
-            <div class="col-8">
-              <form class="form-horizontal formulario" action="next" method="post">
-              
-                <div class="row form-group">
-                  <label class="col-5 control-label" for="days">Days:</label>
-                  <div class="col-7">
-                    <select class="form-control" name="days">
-                      <option value="0">Choose Term...</option>
-                    </select>
-                  </div>
-                </div>
-                
-                <div class="row form-group">
-                  <label class="col-5 control-label" for="days">ACV:</label>
-                  <div class="col-7">
-                    <select class="form-control" name="days">
-                      <option value="0">Choose Term...</option>
-                    </select>
-                  </div>
-                </div>
 
-                <div class="row form-group">
-                  <label class="col-5 control-label" for="days">Liability Limit:</label>
-                  <div class="col-7">
-                    <select class="form-control" name="days">
-                      <option value="0">Choose Term...</option>
-                    </select>
+    <div id="login" class="modal fade" role="dialog" style="width: fit-content;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button data-dismiss="modal" class="close">×</button>
+          <p><img src="https://mexicocrossborder.com/dnis/imagenes/img_mapFull.gif"></p>
+          <p><img src="https://mexicocrossborder.com/dnis/imagenes/img_mapLimited.gif"></p>
+        </div>
+      </div>
+    </div>  
+  </div>
+
+
+
+
+
+    <div class="container-fluid">
+      <div class="row" style="margin-bottom: 1em;">
+              <div class="col-12">
+                <ul class="nav justify-content-center onlyAseguradoras">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Quote ANA Only</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Quote Chubb Only</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Quote Qualitas Only</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Quote Zurich Only</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10">
+          
+          <form class="form-horizontal formulario" action="next" method="post">
+            <div class="row form-group">
+              <label class="col-sm-4 control-label" for="days">Days:</label>
+              <div class="col-sm-6">
+                <select class="form-control" name="days">
+                  <option value="0">Choose Term...</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="row form-group">
+              <label class="col-sm-4 control-label" for="days">ACV:</label>
+              <div class="col-sm-6">
+                <select class="form-control" name="days">
+                  <option value="0">Choose Term...</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <label class="col-sm-4 control-label" for="ACV">Liability Limits:</label>
+              <div class="col-sm-6">
+                <select class="form-control" name="ACV">
+                  <option value="0">Choose value...</option>
+                </select>
+                <div class="row" style="float: right;">
+                  <div class="col-12" style="text-align: right !important;">
+                    <h6>*ANA only offers liability in some vehicles.</h6>
                   </div>
                 </div>
-              </form>
+              </div>
+              
             </div>
-            <div class="col-4">
-              <img src="https://mexicocrossborder.com/dnis/imagenes/logoqualitas_colortrans.png" style="height: 50%;">
-            </div>
-          </div>
-          <!--INICIA COTIZACIÓN-->
-          <div class="row items-align-center" style="margin-top: -5em;">
-            <div class="col-12">
-              <div class="centerTable">
-                <table cellpadding="0" cellspacing="2" bgcolor="white" border="1">
+            
+          </form>
+        </div>
+      </div>
+
+      <div class="row items-align-center">
+          <div class="col-12">
+            <div class="centerTable">
+
+              <div class="tablaCotizador">
+                <table cellpadding="0" cellspacing="2" bgcolor="white" border="1" style="border-color:#f7f7f7;">
                   <tbody>
                     <tr>
                       <th class="title_top">&nbsp;</th>
-                      <th class="title_top">13 Days<br>Full Territory</th>
-                      <th class="title_top">Semiannual<br>Full Territory</th>
-                      <th class="title_top">Semiannual<br>Limited Territory</th>
-                      <th class="title_top">Annual<br>Full Territory</th>
-                      <th class="title_top">Annual<br>Limited Territory</th>
+                      <th class="title_top">10 Days</th>
+                      <th class="title_top">Semiannual</th>
+                      <th class="title_top">Annual</th>
                     </tr>
                     <tr>
                       <th class="title_left">Liability<br>
-                        <a href="../DNIS - QUALITAS PRODUCTS.pdf" target="_blank">View Coverage Detail</a>
+                        <a href="javascript:verCoberturas(1,1,1,1,1);" class="lick_cotiza">View Coverage</a>
                       </th>
                       <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="93" checked="">$&nbsp;68.52<br><a href="javascript:detalle_pol(93);"> View Detail&nbsp;</a>
+                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
+                        <input type="radio" name="tarifa" value="46" checked="">$&nbsp;50.20<br>
+                        <a href="javascript:detalle_pol(46);" class="lick_cotiza"> View Detail&nbsp;</a>
                       </td>
                       <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="94">$&nbsp;135.54<br><a href="javascript:detalle_pol(94);"> View Detail&nbsp;</a>
+                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
+                        <input type="radio" name="tarifa" value="47">$&nbsp;66.86<br>
+                        <a href="javascript:detalle_pol(47);" class="lick_cotiza"> View Detail&nbsp;</a>
                       </td>
                       <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="101">$&nbsp;114.36<br><a href="javascript:detalle_pol(101);"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="95">$&nbsp;168.19<br><a href="javascript:detalle_pol(95);"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="102">$&nbsp;139.59<br><a href="javascript:detalle_pol(102);"> View Detail&nbsp;</a>
+                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
+                        <input type="radio" name="tarifa" value="48">$&nbsp;105.47<br>
+                        <a href="javascript:detalle_pol(48);" class="lick_cotiza"> View Detail&nbsp;</a>
                       </td>
                     </tr>
                     <tr>
                       <th class="title_left">Full Coverage<br>
-                        <a href="../DNIS - QUALITAS PRODUCTS.pdf" target="_blank">View Coverage Detail</a>
+                        <a href="javascript:verCoberturas(2,1,1,1,1);" class="lick_cotiza">View Coverage</a>
                       </th>
                       <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="96">$&nbsp;98.80<br><a href="javascript:detalle_pol(96);"> View Detail&nbsp;</a>
+                        <img src="https://mexicocrossborder.com/dnis/imagenes/2.jpg"><br>
+                        <input type="radio" name="tarifa" value="41">$&nbsp;110.01<br>
+                        <a href="javascript:detalle_pol(41);" class="lick_cotiza"> View Detail&nbsp;</a>
                       </td>
                       <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="97">$&nbsp;218.61<br><a href="javascript:detalle_pol(97);"> View Detail&nbsp;</a>
+                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
+                        <input type="radio" name="tarifa" value="50">$&nbsp;235.24<br>
+                        <a href="javascript:detalle_pol(50);" class="lick_cotiza"> View Detail&nbsp;</a>
                       </td>
                       <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="103">$&nbsp;173.01<br><a href="javascript:detalle_pol(103);"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="98">$&nbsp;278.93<br><a href="javascript:detalle_pol(98);"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="104">$&nbsp;217.75<br><a href="javascript:detalle_pol(104);"> View Detail&nbsp;</a>
+                        <img src="https://mexicocrossborder.com/dnis/imagenes/4.jpg"><br>
+                        <input type="radio" name="tarifa" value="34">$&nbsp;309.02<br>
+                        <a href="javascript:detalle_pol(34);" class="lick_cotiza"> View Detail&nbsp;</a>
                       </td>
                     </tr>
                     <tr>
-                      <th class="title_left">Premium Full Coverage <br>
-                        <a href="../DNIS - QUALITAS PRODUCTS.pdf" target="_blank">View Coverage Detail</a>
+                      <th class="title_left">Premium Full Coverage<br>
+                        <a href="javascript:verCoberturas(3,1,1,0,1);" class="lick_cotiza">View Coverage</a>
                       </th>
-                      <td class="cotizando" align="center">N/A</td>
                       <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="99">$&nbsp;249.81<br><a href="javascript:detalle_pol(99);"> View Detail&nbsp;</a>
+                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
+                        <input type="radio" name="tarifa" value="52">$&nbsp;170.68<br>
+                        <a href="javascript:detalle_pol(52);" class="lick_cotiza"> View Detail&nbsp;</a>
                       </td>
                       <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="105">$&nbsp;195.03<br><a href="javascript:detalle_pol(105);"> View Detail&nbsp;</a>
+                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
+                        <input type="radio" name="tarifa" value="53">$&nbsp;268.92<br>
+                        <a href="javascript:detalle_pol(53);" class="lick_cotiza"> View Detail&nbsp;</a>
                       </td>
                       <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="100">$&nbsp;317.41<br><a href="javascript:detalle_pol(100);"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <input type="radio" name="tarifa" value="106">$&nbsp;244.91<br><a href="javascript:detalle_pol(106);"> View Detail&nbsp;</a>
+                        <img src="https://mexicocrossborder.com/dnis/imagenes/2.jpg"><br>
+                        <input type="radio" name="tarifa" value="45">$&nbsp;400.91<br>
+                        <a href="javascript:detalle_pol(45);" class="lick_cotiza"> View Detail&nbsp;</a>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
-          </div>
-          
-          
-          <div class="row justify-content-center" style="margin-top: 1em;">
+
+
+
+            
+
+
+
+
+            <div class="row justify-content-center" style="margin-top: 1em;">
             <!--PARA EL DEMO, USARÉ UNA ETIQUETA A HREF, PARA LA VERSIÓN REAL, SE USA LA ETIQUETA BUTTON QUE AQUÍ ESTÁ COMENTADA, POR FAVOR, DESCOMENTAR Y USAR LA SIGUIENTE LÍNEA:
             <div class="separador"><button type="submit" class="btn btn-next">NEXT</button></div>
-          -->
-            <div class="separador"><a href="pant3.html" class="btn btn-next">NEXT</a></div>
-          </div>
+          --><div class="separador"><a href="pant3.html" class="btn btn-next">BACK</a></div>&nbsp;&nbsp;&nbsp;
+              <div class="separador"><a href="pant3.html" class="btn btn-next">NEXT</a></div>
+            </div>
+
+
 
         </div>
       </div>
@@ -542,6 +590,10 @@ ul.submenu_qualitas ul.dropdown-menu a:hover{
   background-color: #900a19 !important;
 }
 
+.onlyAseguradoras a {
+  color: #006847;
+}
+
 
 /*TABLA COTIZADOR*/
 div.centerTable{
@@ -578,13 +630,18 @@ td.cotizando{
   text-align: center;
   padding: 18px 8px;
   font-weight: 500;
-  color: #ce1126;
+  color: #002868;
 }
 
 td.cotizando a{
   font-size: 11px;
   color: #757575;
   text-decoration: underline;
+}
+
+td.cotizando img{
+  width: 55px;
+  height: auto;
 }
 
 /*RESPONSIVE*/
@@ -655,6 +712,7 @@ ul.submenu_qualitas_resp ul.dropdown-menu a:hover{
 }
 
 @media (max-width: 768px) {
+
     .show-on-mobile{
         display: block;
         visibility: visible;
