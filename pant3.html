@@ -217,64 +217,61 @@
 
     <div class="container-fluid">
       <div class="row" style="margin-bottom: 1em;">
-        <div class="col-12">
-          <ul class="nav justify-content-center onlyAseguradoras">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Quote ANA Only</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Quote Chubb Only</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Quote Qualitas Only</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Quote Zurich Only</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <form class="form-horizontal formulario" action="next" method="post">
-            <div class="row">
-              <div class="col-4">
-                <div class="row form-group">
-                  <label class="col-sm-4 control-label" for="days">Days:</label>
-                  <div class="col-sm-6">
-                    <select class="form-control" name="days">
-                      <option value="0">Choose Term...</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="row form-group">
-                  <label class="col-sm-4 control-label" for="days">ACV:</label>
-                  <div class="col-sm-6">
-                    <select class="form-control" name="days">
-                      <option value="0">Choose Term...</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="row form-group">
-                  <label class="col-sm-4 control-label" for="ACV">Liability Limits:</label>
-                  <div class="col-sm-6">
-                    <select class="form-control" name="ACV">
-                      <option value="0">Choose value...</option>
-                    </select>
-                    <div class="row" style="float: right;">
-                      <div class="col-12" style="text-align: right !important;">
-                        <h6>*ANA only offers liability in some vehicles.</h6>
-                      </div>
-                    </div>
-                  </div>
-                </div>  
+              <div class="col-12">
+                <ul class="nav justify-content-center onlyAseguradoras">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Quote ANA Only</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Quote Chubb Only</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Quote Qualitas Only</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Quote Zurich Only</a>
+                  </li>
+                </ul>
               </div>
             </div>
+
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10">
+          
+          <form class="form-horizontal formulario" action="next" method="post">
+            <div class="row form-group">
+              <label class="col-sm-4 control-label" for="days">Days:</label>
+              <div class="col-sm-6">
+                <select class="form-control" name="days">
+                  <option value="0">Choose Term...</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="row form-group">
+              <label class="col-sm-4 control-label" for="days">ACV:</label>
+              <div class="col-sm-6">
+                <select class="form-control" name="days">
+                  <option value="0">Choose Term...</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row form-group">
+              <label class="col-sm-4 control-label" for="ACV">Liability Limits:</label>
+              <div class="col-sm-6">
+                <select class="form-control" name="ACV">
+                  <option value="0">Choose value...</option>
+                </select>
+                <div class="row" style="float: right;">
+                  <div class="col-12" style="text-align: right !important;">
+                    <h6>*ANA only offers liability in some vehicles.</h6>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
           </form>
         </div>
       </div>
@@ -283,77 +280,86 @@
           <div class="col-12">
             <div class="centerTable">
 
-              <div>
-                <table cellpadding="0" cellspacing="2" bgcolor="white" border="1" style="border-color:#f7f7f7;">
-                  <tbody>
-                    <tr>
-                      <th class="title_top">&nbsp;</th>
-                      <th class="title_top">10 Days</th>
-                      <th class="title_top">Semiannual</th>
-                      <th class="title_top">Annual</th>
-                    </tr>
-                    <tr>
-                      <th class="title_left">Liability<br>
-                        <a href="javascript:verCoberturas(1,1,1,1,1);" class="lick_cotiza">View Coverage</a>
-                      </th>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
-                        <input type="radio" name="tarifa" value="46" checked="">&nbsp;&nbsp;$&nbsp;50.20<br>
-                        <a href="javascript:detalle_pol(46);" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
-                        <input type="radio" name="tarifa" value="47">&nbsp;&nbsp;$&nbsp;66.86<br>
-                        <a href="javascript:detalle_pol(47);" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
-                        <input type="radio" name="tarifa" value="48">&nbsp;&nbsp;$&nbsp;105.47<br>
-                        <a href="javascript:detalle_pol(48);" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="title_left">Full Coverage<br>
-                        <a href="javascript:verCoberturas(2,1,1,1,1);" class="lick_cotiza">View Coverage</a>
-                      </th>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/2.jpg"><br>
-                        <input type="radio" name="tarifa" value="41">&nbsp;&nbsp;$&nbsp;110.01<br>
-                        <a href="javascript:detalle_pol(41);" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
-                        <input type="radio" name="tarifa" value="50">&nbsp;&nbsp;$&nbsp;235.24<br>
-                        <a href="javascript:detalle_pol(50);" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/4.jpg"><br>
-                        <input type="radio" name="tarifa" value="34">&nbsp;&nbsp;$&nbsp;309.02<br>
-                        <a href="javascript:detalle_pol(34);" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="title_left">Premium Full Coverage<br>
-                        <a href="javascript:verCoberturas(3,1,1,0,1);" class="lick_cotiza">View Coverage</a>
-                      </th>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
-                        <input type="radio" name="tarifa" value="52">&nbsp;&nbsp;$&nbsp;170.68<br>
-                        <a href="javascript:detalle_pol(52);" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
-                        <input type="radio" name="tarifa" value="53">&nbsp;&nbsp;$&nbsp;268.92<br>
-                        <a href="javascript:detalle_pol(53);" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/2.jpg"><br>
-                        <input type="radio" name="tarifa" value="45">&nbsp;&nbsp;$&nbsp;400.91<br>
-                        <a href="javascript:detalle_pol(45);" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="tablaCotizador">
+                
+              <table width="600">
+                <tr>
+                  <th> &nbsp; </th>
+                  <th style="text-align: center;"><img src="https://mexicocrossborder.com/dnis/imagenes/4.jpg" style="width: 55px; height: auto;"></th>
+                  <th style="text-align: center;"><img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg" style="width: 55px; height: auto;"></th>
+                  <th style="text-align: center;"><img src="https://mexicocrossborder.com/dnis/imagenes/2.jpg" style="width: 55px; height: auto;"></th>
+                  <th style="text-align: center;"><img src="https://mexicocrossborder.com/dnis/imagenes/1.jpg" style="width: 55px; height: auto;"></th>
+                </tr>
+                <tr>
+                  <th style="font-size: 13px; padding: 10px;"> Collision </th>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr>
+                  <th style="font-size: 13px; padding: 10px;"> Total Theft </th>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr>
+                  <th style="font-size: 13px; padding: 10px;"> Property Damage and Bodily Injury </th>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr>
+                  <th style="font-size: 13px; padding: 10px;"> Medical Expense </th>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr>
+                  <th style="font-size: 13px; padding: 10px;"> Legal Defense </th>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr>
+                  <th style="font-size: 13px; padding: 10px;"> Automobile Assistance </th>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr>
+                  <th style="font-size: 13px; padding: 10px;"> Vandalism </th>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr><tr>
+                  <th style="font-size: 13px; padding: 10px;"> Deductible Waiver for UM </th>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr>
+                  <th style="font-size: 13px; padding: 10px;"> Partial Theft </th>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check fa-2x" aria-hidden="true" style="color: #006847;"></i></td>
+                  <td><i class="fa fa-close fa-2x" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+
+
+              </table>
+
+
+
+
+
               </div>
             </div>
 
@@ -367,8 +373,7 @@
             <div class="row justify-content-center" style="margin-top: 1em;">
             <!--PARA EL DEMO, USARÉ UNA ETIQUETA A HREF, PARA LA VERSIÓN REAL, SE USA LA ETIQUETA BUTTON QUE AQUÍ ESTÁ COMENTADA, POR FAVOR, DESCOMENTAR Y USAR LA SIGUIENTE LÍNEA:
             <div class="separador"><button type="submit" class="btn btn-next">NEXT</button></div>
-          --><div class="separador"><a href="index.html" class="btn btn-next">BACK</a></div>&nbsp;&nbsp;&nbsp;
-              <div class="separador"><a href="pant3.html" class="btn btn-next">NEXT</a></div>
+          --><div class="separador"><a href="index.html" class="btn btn-next">PRINT</a></div>
             </div>
 
 
@@ -611,7 +616,7 @@ div.centerTable table{
 .title_top{
   font-size: 13px;
   text-align: center;
-  padding: 15px;
+  padding: 6px;
   background-color: #002868;
   color: #FFF;
 }
@@ -619,7 +624,7 @@ div.centerTable table{
 .title_left{
   font-size: 13px;
   text-align: center;
-  padding: 14px;
+  padding: 7px;
   color: #002868;
 }
 
@@ -629,9 +634,9 @@ div.centerTable table{
 }
 
 td.cotizando{
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
-  padding: 18px 50px;
+  padding: 18px 8px;
   font-weight: 500;
   color: #002868;
 }
@@ -643,7 +648,7 @@ td.cotizando a{
 }
 
 td.cotizando img{
-  width: 65px;
+  width: 55px;
   height: auto;
 }
 
@@ -724,15 +729,6 @@ ul.submenu_qualitas_resp ul.dropdown-menu a:hover{
     .hide-on-mobile{
         display: none;
         visibility: hidden;
-    }
-
-    td.cotizando{
-      font-size: 14px;
-      padding: 8px 10px;
-    }
-
-    td.cotizando img{
-      width: 55px;
     }
 
 }
