@@ -190,7 +190,6 @@
       <div class="row">
         <div class="col-lg-12">
           <p style="color: #002868; font-size: 1.4em; text-align: center; font-weight: bold;"> Your quotation has been saved with number: XXXXX</p>
-          <h5 style="color: #ce1126; text-align: center; font-weight: bold; text-transform: uppercase;">Premiums shown are the least expensive</h5>
         </div>
       </div>
       
@@ -200,221 +199,396 @@
 
 
     <div id="login" class="modal fade" role="dialog" style="width: fit-content;">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button data-dismiss="modal" class="close">×</button>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button data-dismiss="modal" class="close">×</button>
 
 
 
 
+          </div>
         </div>
-      </div>
-    </div>  
-  </div>
+      </div>  
+    </div>
 
 
 
 
 
     <div class="container-fluid">
-      <div class="row" style="margin-bottom: 1em;">
-              <div class="col-12">
-                <ul class="nav justify-content-center onlyAseguradoras">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Quote ANA Only</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Quote Chubb Only</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Quote Qualitas Only</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Quote Zurich Only</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
       <div class="row justify-content-center">
-        <div class="col-xl-4 col-lg-5 col-md-6 col-sm-10">
-          
-          <form class="form-horizontal formulario" action="next" method="post">
-            <div class="row form-group">
-              <label class="col-sm-4 control-label" for="days">Days:</label>
-              <div class="col-sm-6">
-                <select class="form-control" name="days">
-                  <option value="0">Choose Term...</option>
-                </select>
-              </div>
-            </div>
-            
-            <div class="row form-group">
-              <label class="col-sm-4 control-label" for="days">ACV:</label>
-              <div class="col-sm-6">
-                <select class="form-control" name="days">
-                  <option value="0">Choose Term...</option>
-                </select>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+          <div class="centerTable">
+
+            <div class="row">
+              <div class="col-lg-12">
+                <h5 style="color: #ce1126; text-align: right; font-weight: bold; text-transform: uppercase;" onclick="appeardivVehicle()">VEHICLE DATA &nbsp;<i class="fa fa-icon fa-chevron-down"></i></h5>
+                <hr style="border-color: #ce1126; margin-top: 0px;">
               </div>
             </div>
 
-            <div class="row form-group">
-              <label class="col-sm-4 control-label" for="ACV">Liability Limits:</label>
-              <div class="col-sm-6">
-                <select class="form-control" name="ACV">
-                  <option value="0">Choose value...</option>
-                </select>
-                <div class="row" style="float: right;">
-                  <div class="col-12" style="text-align: right !important;">
-                    <h6>*ANA only offers liability in some vehicles.</h6>
+            <div id="divFormVehicle">
+              <form class="form-horizontal formulario" action="next" method="post">
+                  
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Year:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <select class="form-control" name="days">
+                      <option value="0">Choose Vehicle Year...</option>
+                    </select>
                   </div>
+                  <label class="col-1 asterisk" for="">*</label>
                 </div>
-              </div>
-              
+                  
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Make:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <select class="form-control" name="days">
+                      <option value="0">Choose Vehicle Make...</option>
+                    </select>
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="ACV">Model:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <input type="text" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">VIN:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <input type="text" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+                  
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Plate:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <input type="text" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="ACV">Country:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <select class="form-control" name="ACV">
+                      <option value="0">Choose Country...</option>
+                    </select>
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">State:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <select class="form-control" name="days">
+                      <option value="0">Choose State...</option>
+                    </select>
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+                  
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Ocuppants:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <select class="form-control" name="days">
+                      <option value="0">Choose Number...</option>
+                    </select>
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+                  
+              </form>
             </div>
-            
-          </form>
-        </div>
-      </div>
 
-      <div class="row items-align-center">
-          <div class="col-12">
-
-
-
-
-            <div class="centerTable">
-
-              <div class="tablaCotizador">
-                <table class="modalTable">
-
-                  <tr>
-                    <th class="modal2_title_left" style="text-align: center;">Company</th>
-                    <th class="modal2_title_left">Package</th>
-                    <th class="modal2_title_left">Total Amount</th>
-                    <th class="modal2_title_left">Deductible</th>
-                  </tr>
-                  <tr>
-                    <td style="text-align: center;  padding: 5px;"><img src="https://mexicocrossborder.com/dnis/imagenes/4.jpg" style="width: 55px; height: auto;"></td>
-                    <td style="text-align: left; padding: 10px;">
-                      <font style="font-weight: 500;">Plan:</font><br class="br_show-on-mobile"> &nbsp;PREMIUM <br>
-                      <font style="font-weight: 500;">Territory:</font><br class="br_show-on-mobile"> &nbsp;ALL OF MEXICO<br>
-                      <font style="font-weight: 500;">Days:</font><br class="br_show-on-mobile"> &nbsp;1 year</td>
-                    <td style="text-align: left; padding: 10px;">
-                      <font style="font-weight: 500;">NET PREMIUM:</font><br class="br_show-on-mobile"> &nbsp;$272.22<br>
-                      <font style="font-weight: 500;">POLICY FEE:</font><br class="br_show-on-mobile"> &nbsp;$35.00<br>
-                      <font style="font-weight: 500;">IVA(Mex. TAX):</font><br class="br_show-on-mobile"> &nbsp;$49.16<br>
-                      <font style="font-weight: 500;">AGENCY FEE:</font><br class="br_show-on-mobile"> &nbsp;$0.00<br>
-                      <font style="font-weight: 500;">PROCESSING FEE:</font><br class="br_show-on-mobile"> &nbsp;$14.03<br>
-                      <font style="font-weight: 500;">TOTAL PREMIUM:</font><br class="br_show-on-mobile"> &nbsp;$400.91
-                    </td>
-                    <td style="text-align: left; padding: 10px;">
-                      <font style="font-weight: 500;">Insured:</font><br class="br_show-on-mobile"> &nbsp;BET SMITH<br>
-                      <font style="font-weight: 500;">Num Quotation:</font><br class="br_show-on-mobile"> &nbsp;83466
-                    </td>
-                  </tr>
-                </table>
+            <div class="row">
+              <div class="col-lg-12">
+                <h5 style="color: #ce1126; text-align: right; font-weight: bold; text-transform: uppercase;" onclick="appeardivTow()">TOWED UNIT &nbsp;<i class="fa fa-icon fa-chevron-down"></i></h5>
+                <hr style="border-color: #ce1126; margin-top: 0px;">
               </div>
+            </div>
 
-
-
-
-
-
-              <div class="tablaCotizador" style="margin-top: 2em;">
+            <div id="divFormTow" onchange="showDiv('hidetow', this)">
+              <form class="form-horizontal formulario" action="next" method="post">
                 
-                <table class="modalTable">
-                  <tr style="background-color: #f7f7f7;">
-                    <th class="modal_title_left" style="text-align: center;">Coverage </th>
-                    <th class="modal_title_top">Insured Amounts</th>
-                    <th class="modal_title_top">Deductible</th>
-                  </tr>
-                  <tr class="modal_cover">
-                    <th class="modal_title_left"> Collision </th>
-                    <td>ACV</td>
-                    <td>N/A  $ 500</td>
-                  </tr>
-                  <tr class="modal_cover">
-                    <th class="modal_title_left"> Total Theft </th>
-                    <td>ACV</td>
-                    <td>N/A  $ 1000</td>
-                  </tr>
-                  <tr class="modal_cover">
-                    <th class="modal_title_left"> Property Damage and Bodily Injury </th>
-                    <td>$ 150,000.00</td>
-                    <td>N/A</td>
-                  </tr>
-                  <tr class="modal_cover">
-                    <th class="modal_title_left"> Medical Expense </th>
-                    <td>$ 25,000.00</td>
-                    <td>N/A</td>
-                  </tr>
-                  <tr class="modal_cover">
-                    <th class="modal_title_left"> Legal Defense </th>
-                    <td>INCLUDED</td>
-                    <td>N/A</td>
-                  </tr>
-                  <tr class="modal_cover">
-                    <th class="modal_title_left"> Automobile Assistance </th>
-                    <td>10%</td>
-                    <td>20% $ 100.00</td>
-                  </tr>
-                  <tr class="modal_cover">
-                    <th class="modal_title_left"> Vandalism </th>
-                    <td>FOR COLLISION</td>
-                    <td>N/A</td>
-                  </tr>
-                  <tr class="modal_cover">
-                    <th class="modal_title_left"> Deductible Waiver for UM </th>
-                    <td>INCLUDED</td>
-                    <td>&nbsp;</td>
-                  </tr>
-                  <tr class="modal_cover">
-                    <th class="modal_title_left"> Partial Theft </th>
-                    <td>INCLUDED</td>
-                    <td>&nbsp;</td>
-                </table>
-              </div>
-
-
-              <div class="row" style="margin-top: 1em;">
-                <div class="col-12">
-                  <p style="padding: 10px;">
-                    This document only constitutes an insurance quotation. Therefore it does not imply the acceptance of the risk.<br>
-                    The present quotation is valid for 30 calendar days as of $fecha_calendario. <br><br>
-                    Dear Customer,<br>
-                    If you want to buy Auto Insurance, you can do it directly in my office:<br>
-                  </p>
-                  <div style="color: #002868; font-weight: 500;">
-                    <p>
-                      $direccion_agente$<br>
-                      $direccion_agente$<br>
-                      $direccion_agente$
-                    <br><br>
-                      <font style="font-size: 15px;">$nombre_agente$</font>
-                    <br>
-                      $teléfono_agente$
-                    </p>
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Make:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <input type="text" name="" class="form-control">
                   </div>
+                  <label class="col-1 asterisk" for="">*</label>
                 </div>
-              </div>
-              <div class="row justify-content-center" style="margin-top: 1em;">
-              <!--PARA EL DEMO, USARÉ UNA ETIQUETA A HREF, PARA LA VERSIÓN REAL, SE USA LA ETIQUETA BUTTON QUE AQUÍ ESTÁ COMENTADA, POR FAVOR, DESCOMENTAR Y USAR LA SIGUIENTE LÍNEA:
-              <div class="separador"><button type="submit" class="btn btn-next">NEXT</button></div>
-            --> <div class="separador"><a href="index.html" class="btn btn-next">PRINT</a></div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="ACV">Model:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <input type="text" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">VIN:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <input type="text" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+                
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Plate:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <input type="text" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="ACV">Country:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <select class="form-control" name="ACV">
+                      <option value="0">Choose Country...</option>
+                    </select>
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Plate State:</label>
+                  <div class="col-6" style="padding-right: 5px;">
+                    <select class="form-control" name="days">
+                      <option value="0">Choose State...</option>
+                    </select>
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+                
+              </form>
+            </div>
+                
+            <div class="row">
+              <div class="col-lg-12">
+                <h5 style="color: #ce1126; text-align: right; font-weight: bold; text-transform: uppercase" onclick="appeardivInsurance()">INSURANCE DATA &nbsp;<i class="fa fa-icon fa-chevron-down"></i></h5>
+                <hr style="border-color: #ce1126; margin-top: 0px;">
               </div>
             </div>
 
-            
+
+            <div id="divFormInsurance">
+              <form class="form-horizontal formulario" action="next" method="post">
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Company Name:</label>
+                  <div class="col-6">
+                    <input type="text" name="" class="form-control">
+                  </div>
+                </div>
+                
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">First Name:</label>
+                  <div class="col-6">
+                    <input type="text" name="" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="ACV">Last Name:</label>
+                  <div class="col-6">
+                    <input type="text" name="" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Date of Birth:</label>
+                  <div class="col-6">
+                    <div class='input-group date' id='datetimepicker1'>
+                      <input type='text' class="form-control"/>
+                      <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Country:</label>
+                  <div class="col-6">
+                    <select class="form-control" name="days">
+                      <option value="0">Choose Country...</option>
+                    </select>
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="ACV">ZIP:</label>
+                  <div class="col-6">
+                    <input type="number" maxlength="5" name="" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Address:</label>
+                  <div class="col-6">
+                    <input type="text" name="" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+                
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">City:</label>
+                  <div class="col-6">
+                    <input type="text" name="" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">State:</label>
+                  <div class="col-6">
+                    <select class="form-control" name="days">
+                      <option value="0">Choose state...</option>
+                    </select>
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Phone Number:</label>
+                  <div class="col-6">
+                    <input type="tel" name="" class="form-control">
+                  </div>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Ocuppation:</label>
+                  <div class="col-6">
+                    <input type="text" name="" class="form-control">
+                  </div>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="ACV">Gender:</label>
+                  <div class="col-6" style="text-align: left;">
+                    <input type="radio" name="gender" value="male" checked> Female &nbsp; &nbsp;
+                    <input type="radio" name="gender" value="male" checked> Male &nbsp; &nbsp;
+                    <input type="radio" name="gender" value="male" checked> Other &nbsp; &nbsp;
+                    <label class="hide-on-mobile asterisk" for="">*</label>
+                  </div>
+                  <label class="show-on-mobile col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Email:</label>
+                  <div class="col-6">
+                    <input type="email" name="" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Confirm Email:</label>
+                  <div class="col-6">
+                    <input type="email" name="" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="ACV">Driver License:</label>
+                  <div class="col-6">
+                    <input type="number" name="" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">License Country:</label>
+                  <div class="col-6">
+                    <select class="form-control" name="days">
+                      <option value="0">Choose country...</option>
+                    </select>
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">License State:</label>
+                  <div class="col-6">
+                    <select class="form-control" name="days">
+                      <option value="0">Choose state...</option>
+                    </select>
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
+
+                <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="from">Lienholder</label>
+                  <div class="col-6" style="text-align: left;">
+                    <input type="checkbox" id="checkboxlien" name="checkbox" style="width: 20px; height: 20px;" onclick="appearLienholder()">
+                  </div>
+                </div>
+
+                <div id="hidelienholder" style="display: none;">
+                  <div class="row form-group">
+                    <label class="col-4 control-label labelr" for="days">Name:</label>
+                    <div class="col-6">
+                      <input type="text" name="" class="form-control">
+                    </div>
+                    <label class="col-1 asterisk" for="">*</label>
+                  </div>
+
+                  <div class="row form-group">
+                    <label class="col-4 control-label labelr" for="days">Address:</label>
+                    <div class="col-6">
+                      <input type="text" name="" class="form-control">
+                    </div>
+                    <label class="col-1 asterisk" for="">*</label>
+                  </div>
+
+                  <div class="row form-group">
+                    <label class="col-4 control-label labelr" for="days">Phone Number:</label>
+                    <div class="col-6">
+                      <input type="tel" name="" class="form-control">
+                    </div>
+                    <label class="col-1 asterisk" for="">*</label>
+                  </div>
+
+                  <div class="row form-group">
+                  <label class="col-4 control-label labelr" for="days">Fax:</label>
+                  <div class="col-6">
+                    <input type="email" name="" class="form-control">
+                  </div>
+                  <label class="col-1 asterisk" for="">*</label>
+                </div>
 
 
+                </div>
+                
+              </form>
+            </div>
 
+            <div class="row justify-content-center" style="margin-top: 1em;">
+<!--PARA EL DEMO, USARÉ UNA ETIQUETA A HREF, PARA LA VERSIÓN REAL, SE USA LA ETIQUETA BUTTON QUE AQUÍ ESTÁ COMENTADA, POR FAVOR, DESCOMENTAR Y USAR LA SIGUIENTE LÍNEA:
+              <div class="separador"><button type="submit" class="btn btn-next">NEXT</button></div>
+              -->
+              <div class="separador"><a href="index.html" class="btn btn-next">PRINT</a></div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
 
 
 
@@ -452,27 +626,51 @@
 </script>
 
 <script type="text/javascript">
-  function appeartow() {
 
-  var checkBox = document.getElementById("checkboxtow");
+  function appeardivTow() {
+  var x = document.getElementById("divFormTow");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function appeardivInsurance() {
+  var x = document.getElementById("divFormInsurance");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function appeardivVehicle() {
+  var x = document.getElementById("divFormVehicle");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<script type="text/javascript">
+  function appearLienholder() {
+
+  var checkBox = document.getElementById("checkboxlien");
   // Get the output text
-  var text = document.getElementById("choosetow");
+  var text = document.getElementById("hidelienholder");
 
   // If the checkbox is checked, display the output text
   if (checkBox.checked == true){
-    text.style.display = "flex";
+    text.style.display = "block";
   } else {
     text.style.display = "none";
   }
 }
 </script>
 
-<script type="text/javascript">
-function showDiv(divId, element)
-{
-    document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
-}
-</script>
 
 <script>
 function openNav() {
@@ -634,6 +832,17 @@ ul.submenu_qualitas ul.dropdown-menu a:hover{
   color: #006847;
 }
 
+.asterisk{
+  color: #ce1126;
+  text-align: left !important;
+  padding-left: 0px;
+  font-size: 20px;
+}
+
+#divFormTow, #divFormInsurance{
+  display: none;
+}
+
 
 /*TABLA COTIZADOR*/
 div.centerTable{
@@ -728,6 +937,8 @@ table.modalTable, .modalTable td,th{
   text-align: center;
 }
 
+.tablaFormVehicle
+
 /*RESPONSIVE*/
 
 .submenu_qualitas_resp a{
@@ -795,6 +1006,7 @@ ul.submenu_qualitas_resp ul.dropdown-menu a:hover{
   display: none;
 }
 
+
 br.br_show-on-mobile{
         display: none;
         visibility: hidden;
@@ -817,7 +1029,9 @@ br.br_show-on-mobile{
         visibility: visible;
         text-align: center;
     } 
-
+    .labelr{
+      text-align: right !important;
+    }
 }
 
 
