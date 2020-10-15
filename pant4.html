@@ -189,7 +189,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
-          <p style="color: #002868; font-size: 1.4em; text-align: center; font-weight: bold;"> Your quotation has been saved with number: XXXXX</p>
+          <p style="color: #002868; font-size: 1.4em; text-align: center; font-weight: bold;">Policy Data</p>
         </div>
       </div>
       
@@ -198,63 +198,196 @@
 
 
 
-    <div id="login" class="modal fade" role="dialog" style="width: fit-content;">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button data-dismiss="modal" class="close">×</button>
-
-
-
-
-          </div>
-        </div>
-      </div>  
-    </div>
-
-
-
 
 
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+        <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
+          <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
 
-          <div class="centerTable">
+              <div>
+                <form class="form-horizontal formulario" action="next" method="post">    
+                  <div class="row form-group">
+                    <label class="col-4 control-label labelr" for="days">Payment Method</label>
+                    <div class="col-6" style="padding-right: 5px;">
+                      <select class="form-control" name="days">
+                        <option value="0">Client Credit Card</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
 
-            <div class="tablaCotizador">
-              <table class="modalTable">
+          <div class="row" style="margin-top: 1em;">
 
-                <tr>
-                  <th style="text-align: center; color: #002868">Company</th>
-                  <th class="modalcancel_title_top">DAILY POLICY<br>(1-40 days)</th>
-                  <th class="modalcancel_title_top">6 MONTHS POLICY</th>
-                  <th class="modalcancel_title_top">ANNUAL POLICY</th>
-                </tr>
-                <tr>
-                  <td style="text-align: center; padding: 5px; background-color: #ce1126; color: #fff; font-weight: 500;">CANCELLATION <font style="text-decoration: underline;">BEFORE</font> EFFECTIVE DATE</td>
-                  <td style="text-align:left;  padding: 10px;" colspan="3"><font style="color: #ce1126;">PARTIAL REFUND:</font> Policy fee and corresponding tax will not be reimbursed.</td>
-                  
-                </tr>
-                <tr>
-                  <td style="text-align: center;  padding: 5px; background-color: #ce1126; color: #fff; font-weight: 500;">CANCELLATION <font style="text-decoration: underline;">AFTER</font> EFFECTIVE DATE</td>
-                  <td style="text-align:left;  padding: 10px;"><font style="color: #ce1126;">PARTIAL REFUND:</font> Travel Club's total premium, Policy fee, days used and corresponding tax will not be reimbursed</td>
-                  <td style="text-align:left;  padding: 10px;"><font style="color: #ce1126;">NO REFUND:</font> If cancelled <b>after</b> 60 days of effective date.<br><font style="color: #ce1126;">PARTIAL REFUND:</font> If cancelled <b>within</b> the first 60 days of effective date. The refund amount decreases significantly as you reach the 60 day limit.</td>
-                  <td style="text-align:left;  padding: 10px;"><font style="color: #ce1126;">NO REFUND:</font> If cancelled <b>after</b> 60 days of effective date.<br><font style="color: #ce1126;">PARTIAL REFUND:</font> If cancelled <b>within</b> the first 60 days of effective date. The refund amount decreases significantly as you reach the 60 day limit.</td>
-                </tr>
-                <tr>
-                  <td style="text-align:left;  padding: 10px;" colspan="3"><font style="color: #ce1126;">**</font> Policy fee & Corresponding tax will be reimbursed <b>ONLY</b> if policy will be replaced by a new one.<br><font style="color: #ce1126;">***</font> If the policy is replaced during the first 4 hours of effective date. Select reimbursement type: TOTAL. Otherwise, select PARTIAL.</td>
-                </tr>
-              </table>
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+
+              <div class="centerTable">
+
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h5 style="color: #ce1126; text-align: right; font-weight: bold; text-transform: uppercase;">VEHICLE DATA &nbsp;</h5>
+                    <hr style="border-color: #ce1126; margin-top: 0px;">
+                  </div>
+                </div>
+
+                <div id="divFormVehicle">
+                  <form class="form-horizontal formulario" action="next" method="post">
+                      
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="days">Year:</label>
+                      <div class="col-6" style="padding-right: 5px;">
+                        <select class="form-control" name="days">
+                          <option value="0">Choose Vehicle Year...</option>
+                        </select>
+                      </div>
+                      <label class="col-1 asterisk" for="">*</label>
+                    </div>
+                      
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="days">Make:</label>
+                      <div class="col-6" style="padding-right: 5px;">
+                        <select class="form-control" name="days">
+                          <option value="0">Choose Vehicle Make...</option>
+                        </select>
+                      </div>
+                      <label class="col-1 asterisk" for="">*</label>
+                    </div>
+
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="ACV">Model:</label>
+                      <div class="col-6" style="padding-right: 5px;">
+                        <input type="text" class="form-control">
+                      </div>
+                      <label class="col-1 asterisk" for="">*</label>
+                    </div>
+
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="days">VIN:</label>
+                      <div class="col-6" style="padding-right: 5px;">
+                        <input type="text" class="form-control">
+                      </div>
+                      <label class="col-1 asterisk" for="">*</label>
+                    </div>
+                      
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="days">Plate:</label>
+                      <div class="col-6" style="padding-right: 5px;">
+                        <input type="text" class="form-control">
+                      </div>
+                      <label class="col-1 asterisk" for="">*</label>
+                    </div>
+
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="ACV">Country:</label>
+                      <div class="col-6" style="padding-right: 5px;">
+                        <select class="form-control" name="ACV">
+                          <option value="0">Choose Country...</option>
+                        </select>
+                      </div>
+                      <label class="col-1 asterisk" for="">*</label>
+                    </div>
+
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="days">State:</label>
+                      <div class="col-6" style="padding-right: 5px;">
+                        <select class="form-control" name="days">
+                          <option value="0">Choose State...</option>
+                        </select>
+                      </div>
+                      <label class="col-1 asterisk" for="">*</label>
+                    </div>
+                      
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="days">Ocuppants:</label>
+                      <div class="col-6" style="padding-right: 5px;">
+                        <select class="form-control" name="days">
+                          <option value="0">Choose Number...</option>
+                        </select>
+                      </div>
+                      <label class="col-1 asterisk" for="">*</label>
+                    </div>
+                      
+                  </form>
+                </div>
+              </div>
             </div>
 
 
-            <div class="row justify-content-center" style="margin-top: 1em;">
-            <!--PARA EL DEMO, USARÉ UNA ETIQUETA A HREF, PARA LA VERSIÓN REAL, SE USA LA ETIQUETA BUTTON QUE AQUÍ ESTÁ COMENTADA, POR FAVOR, DESCOMENTAR Y USAR LA SIGUIENTE LÍNEA:
-            <div class="separador"><button type="submit" class="btn btn-next">NEXT</button></div>
-          --><div class="separador"><a href="index.html" class="btn btn-next">I AGREE</a></div>&nbsp;&nbsp;&nbsp;
-              <div class="separador"><a href="pant3.html" class="btn btn-next">CANCEL</a></div>
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+              <div class="centerTable">
+
+                <div id="">
+                  <form class="form-horizontal form_credit" action="next" method="post">
+                      
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="ACV">Net Premium:</label>
+                      <div class="col-4" style="padding-right: 5px;">
+                        <input type="text" class="form-control input_noborder" value="181.05">
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="ACV">Policy Fee:</label>
+                      <div class="col-4" style="padding-right: 5px;">
+                        <input type="text" class="form-control input_noborder" value="35.00">
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="ACV">Sub Total:</label>
+                      <div class="col-4" style="padding-right: 5px;">
+                        <input type="text" class="form-control input_noborder" value="216.05">
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="ACV">Tax:</label>
+                      <div class="col-4" style="padding-right: 5px;">
+                        <input type="text" class="form-control input_noborder" value="34.57">
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="ACV">Travel Club:</label>
+                      <div class="col-4" style="padding-right: 5px;">
+                        <input type="text" class="form-control input_noborder" value="30.45">
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="ACV">Agency Fee:</label>
+                      <div class="col-4" style="padding-right: 5px;">
+                        <input type="text" class="form-control input_noborder" value="0.00">
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="ACV">Processing Fee:</label>
+                      <div class="col-4" style="padding-right: 5px;">
+                        <input type="text" class="form-control input_noborder" value="10.19">
+                      </div>
+
+                    </div>
+
+                    <div class="row form-group">
+                      
+                      <label class="col-4 control-label labelr" style="color:#002868;" for="ACV" style="color: #002868;">Grand Total:</label>
+                      <div class="col-4" style="padding-right: 5px;">
+                        <input type="text" class="form-control input_noborder" value="291.26" style="box-shadow: inset 0px -3px 0px rgba(255,0,0,.3) !important;">
+                      </div>
+                    </div>
+                      
+                  </form>
+                </div>
+              </div>
             </div>
+
 
           </div>
         </div>
@@ -608,7 +741,10 @@ table.modalTable, .modalTable td,th{
   text-align: center;
 }
 
-.tablaFormVehicle
+.input_noborder{
+  border: none !important;
+  box-shadow: inset 0px -3px 0px rgba(0,0,0,.075) !important;
+}
 
 /*RESPONSIVE*/
 
