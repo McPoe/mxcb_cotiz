@@ -159,6 +159,24 @@ ul.submenu_qualitas_resp ul.dropdown-menu a:hover{
   border: solid 1px #ce1126;
 }
 
+.btn-download{
+  background-color: #002868;
+  color: #FFF;
+  height: 2.5em;
+  font-size: 16px;
+  padding: 6px 15px !important;
+}
+
+.btn-download:hover{
+  background-color: #FFF;
+  color: #002868;
+  border: solid 1px #002868;
+}
+
+.d-block > .btn{
+  display: block !important;
+}
+
 .licencias p{
   color: #FFF;
   font-size: 11px;
@@ -318,7 +336,7 @@ br.br_show-on-mobile{
   border: none !important;
   box-shadow: inset 0px -3px 0px rgba(0,0,0,.075) !important;
 }
-/*INPUTS ESPECIALES PARA MM/AA Y CVC*/
+/*INPUTS ESPECIALES PARA MM/AA Y CVV*/
 .inputcc{
   height: 34px;
   padding: 6px;
@@ -334,6 +352,21 @@ br.br_show-on-mobile{
 
 .hide-on-mobile+.asterisk{
   display: inline-block;
+}
+
+/*-----DE LA QUINTA PANTALLA | NÚMERO DE PÓLIZA ----*/
+div.policy-number{
+  margin: 0 auto;
+  border: 1px solid #757575;
+  width: 40%;
+}
+
+.policy-number h4{
+  text-align: center;
+  color: #ce1126;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 10px 20px;
 }
 
 /*PRE MOBILE*/
@@ -385,5 +418,9 @@ br.br_show-on-mobile{
 
   .labelr{
     text-align: right !important;
+  }
+
+  div.policy-number{
+    width: 70%;
   }
 }
