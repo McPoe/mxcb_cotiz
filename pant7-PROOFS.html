@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Cotizador MXCB 6-FIN</title>
+  <title>Cotizador MXCB 7-PRUEBAS</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -97,7 +97,7 @@
     </div>
 
 
-<!--VERSIÓN WEB DE HEADER CON MENU LATERAL QUE EN RESPONSIVE SE VUELVE CENTRAL Y DROPDOWN-->
+<!--VERSIÓN mobile DE HEADER CON MENU LATERAL QUE EN RESPONSIVE SE VUELVE CENTRAL Y DROPDOWN-->
     <div class="show-on-mobile">
       
       <div>
@@ -176,10 +176,73 @@
 <hr style="background-color: #002868; height: 9px; margin-top: 0px; border-top: none;">
 
 
+<!-- PRIMER MODAL PARA POLÍTICAS DE CANCELACIÓN-->
+  <div id="politicancel" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button data-dismiss="modal" class="close">×</button>
+
+          
+          <div class="centerTable">
+
+              <div class="tablaCotizador">
+                <table class="modalTable modalcancel">
+
+                  <tr>
+                    <th style="text-align: center; color: #002868">Company</th>
+                    <th class="modalcancel_title_top">DAILY POLICY<br>(1-40 days)</th>
+                    <th class="modalcancel_title_top">6 MONTHS POLICY</th>
+                    <th class="modalcancel_title_top">ANNUAL POLICY</th>
+                  </tr>
+                  <tr>
+                    <td style="text-align: center; padding: 15px 5px; background-color: #002868; color: #fff; font-weight: 500;">CANCELLATION <font style="text-decoration: underline; text-decoration-color: #ce1126;">BEFORE</font> EFFECTIVE DATE</td>
+                    <td style="text-align:left;  padding: 10px;" colspan="3"><font style="color: #ce1126;">PARTIAL REFUND:</font> Policy fee and corresponding tax will not be reimbursed.</td>
+                    
+                  </tr>
+                  <tr>
+                    <td style="text-align: center;  padding: 5px; background-color: #002868; color: #fff; font-weight: 500;">CANCELLATION <font style="text-decoration: underline; text-decoration-color: #ce1126;">AFTER</font> EFFECTIVE DATE</td>
+                    <td style="text-align:left;  padding: 10px;"><font style="color: #ce1126;">PARTIAL REFUND:</font> Travel Club's total premium, Policy fee, days used and corresponding tax will not be reimbursed</td>
+                    <td style="text-align:left;  padding: 10px;"><font style="color: #ce1126;">NO REFUND:</font> If cancelled <b>after</b> 60 days of effective date.<br><font style="color: #ce1126;">PARTIAL REFUND:</font> If cancelled <b>within</b> the first 60 days of effective date. The refund amount decreases significantly as you reach the 60 day limit.</td>
+                    <td style="text-align:left;  padding: 10px;"><font style="color: #ce1126;">NO REFUND:</font> If cancelled <b>after</b> 60 days of effective date.<br><font style="color: #ce1126;">PARTIAL REFUND:</font> If cancelled <b>within</b> the first 60 days of effective date. The refund amount decreases significantly as you reach the 60 day limit.</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:left;  padding: 10px;" colspan="4"><font style="color: #ce1126;">**</font> Policy fee & Corresponding tax will be reimbursed <b>ONLY</b> if policy will be replaced by a new one.<br><font style="color: #ce1126;">***</font> If the policy is replaced during the first 4 hours of effective date. Select reimbursement type: TOTAL. Otherwise, select PARTIAL.</td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="row justify-content-center" style="margin-top: 1em;">
+  <!--PARA EL DEMO, USARÉ UNA ETIQUETA A HREF, PARA LA VERSIÓN REAL, SE USA LA ETIQUETA BUTTON QUE AQUÍ ESTÁ COMENTADA, POR FAVOR, DESCOMENTAR Y USAR LA SIGUIENTE LÍNEA:
+                <div class="separador"><button type="submit" class="btn btn-next">NEXT</button></div>
+  -->
+                <div class="separador"><a href="pant4.html" class="btn btn-next">I AGREE</a></div>&nbsp;&nbsp;&nbsp;
+                <div class="separador"><a href="index.html" class="btn btn-next">CANCEL</a></div>
+              </div>
+
+            </div>
+
+        </div>
+      </div>
+    </div>  
+  </div>
+
+
 <!--INICIA CONTENIDO-->
   <div id="wrapper">
 
-    <!--CONFIRMACIÓN DE POLIZA HECHA-->
+<!--TITULO DE LA PÁGINA-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <p style="color: #002868; font-size: 1.4em; text-align: center; font-weight: bold;"> Policy: XXXXX</p>
+        </div>
+      </div>
+      
+      <hr style="width: 50%; background-color: #002868; margin-top: 0px; height: 3px;">
+    </div>
+
+    <!--FORMULARIO DE LA INFORMACIÓN DE LA PÓLIZA-->
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
@@ -190,7 +253,7 @@
                 <h3 style="color: #009b00;">DONE!</h3>
                 <img src="check-fin.png" alt="Logo Autoevalua" style="height: auto; width: 11em;">  
               </div>
-              <div class="policy-number" style="margin-top: 1em;">
+              <div class="policy-number">
                 <h5 style="color: #002868; text-align: center; font-weight: bold; text-transform: uppercase; margin-top: 2em;">Your policy has been created with number:</h5>
                 <h4>XXXXXXXX</h4>  
                 
