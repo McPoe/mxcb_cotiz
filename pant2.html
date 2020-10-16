@@ -97,36 +97,43 @@
     </div>
 
 
-<!--VERSIÓN WEB DE HEADER CON MENU LATERAL QUE EN RESPONSIVE SE VUELVE CENTRAL Y DROPDOWN-->
+<!--VERSIÓN mobile DE HEADER CON MENU LATERAL QUE EN RESPONSIVE SE VUELVE CENTRAL Y DROPDOWN-->
     <div class="show-on-mobile">
-      
-      <div>
-        <img src="mxbfull_logo.png" alt="" style="height: auto; width: 15em; padding-bottom: 12px;">
-      </div>
-
-      <div class="row" style="margin-right: 0px; background-color: #f7f7f7; padding-top: 12px;">
-        <div class="col-sm-12" style="padding-right: 0px;">
-          <ul class="info_agente" style="text-align: center;">
-            <li>AUTHORIZED AGENT</li>
-            <hr style="margin: 5px;">
-            <li>$nombre_agente$</li>
-            <li>$direccion_agente$<br>$direccion_agente$</li>
-            <li style="padding-top: 10px;">$teléfono_agente$</li>
-            <li>$correo@agente.com$</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row" style="margin-right: 0px;">
-        <div class="col-12" style="padding-right: 0px;">
-          <nav class="navbar" style="background-color: #002868; color: #FFF; margin-bottom: 0px; min-height: 20px;">
-            
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mxcb-navbar-collapse-2" aria-expanded="false" style="margin: 0px; padding: 0px; padding-top: 5px; z-index: 99999;">
-                  <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
+      <div class="container-fluid">
+        
+        <div class="row">
+          <div class="col-sm-5 col-xs-5">
+            <div>
+              <img src="mxbfull_logo.png" alt="" style="height: auto; width: 12em; padding-bottom: 12px;">
+            </div>
+          </div>
+          <div class="col-sm-7 col-xs-7" style="padding-right: 0px;">
+            <div class="row" style="margin-right: 0px;">
+              <div class="col-sm-12" style="padding-right: 0px;">
+                <ul class="info_agente">
+                  <li>AUTHORIZED AGENT</li>
+                  <hr style="margin: 5px;">
+                  <li>$nombre_agente$</li>
+                  <li style="padding-top: 10px;">$teléfono_agente$</li>
+                </ul>
               </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-12" style="padding-right: 0px; background-color: #002868; margin-right: 0px;">
+            <nav class="navbar" style="background-color: #002868; color: #FFF; margin-bottom: 0px; min-height: 10px;">
+              
+              <div class="container-fluid">
+                <div class="navbar-header" style="background-color: #002868; padding: 0px 5px;">
+                  <div style="color: #FFF; text-align: right !important; font-weight: bold; text-transform: uppercase; z-index: 999999" data-toggle="collapse" data-target="#mxcb-navbar-collapse-2" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true" style="text-align: right !important;"></i></div>
+                </div>
+              </div>
+
+
+
 
               <div class="collapse navbar-collapse" id="mxcb-navbar-collapse-2">
                 <ul class="nav navbar-nav submenu_qualitas_resp">
@@ -164,10 +171,8 @@
 
                 </ul>
               </div>
-
-            </div>
-
-          </nav>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
