@@ -401,6 +401,18 @@ br.br_show-on-mobile{
     visibility: hidden !important;
   }
 
+  .info_agente{
+    text-align: right;
+  }
+
+  .info_agente > li {
+    font-size: 13px;
+  }
+
+  .info_agente > li:first-child {
+      font-size: 14px;
+  }
+
   td.cotizando{
     font-size: 14px;
     padding: 8px 10px;
@@ -414,7 +426,7 @@ br.br_show-on-mobile{
     display: block;
     visibility: visible;
     text-align: center;
-  } 
+  }
 
   .labelr{
     text-align: right !important;
