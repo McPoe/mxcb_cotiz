@@ -5,10 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style_mxcb_clientes.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
@@ -17,16 +18,17 @@
   
   <header style="margin-top: 1em;">
 
+<!--VERSIÓN WEB DE HEADER CON MENU LATERAL QUE EN RESPONSIVE SE VUELVE CENTRAL Y DROPDOWN-->
     <div class="hide-on-mobile">
       <div class="container-fluid"> 
         <div class="row">
+          
           <div class="col-lg-5 col-md-4 col-sm-3 ">
-            
+          
             <div id="mySidebar" class="sidebar">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 
               <div class="mxcb_menucliente">
-
 
                 <div class="collapse navbar-collapse" style="padding-left: 0px; ">
                   <ul class="nav navbar-nav submenu_qualitas">
@@ -40,12 +42,10 @@
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What to do in case of Accident?</a>
                       <ul class="dropdown-menu">
                         <li><a href="https://mexicocrossborder.com/dnis/pdfs/wtdinoa_QUALITAS2.pdf" target="_blank">Qualitas</a></li>
-                        
                       </ul>
                     </li>
                   </ul>
                 </div>
-
 
                 <div class="btn-group" style="margin-top: 1.3em;">
                   <button class="btn btn_chat"><i class="fa fa-comments-o" aria-hidden="true">&nbsp;</i>Chat Support</button>
@@ -61,18 +61,19 @@
                   <p>LIC # 15740053 TEXAS</p>
                 </div>
 
-
               </div>
-
-              </div>
+            </div>
               
 
             <div id="main">
               <img src="mxbfull_logo.png" alt="" style="height: auto; width: 14em;"><br><br>
               <button class="openbtn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;MENU</button>
             </div>
+          
           </div>
+
           <div class="col-lg-7 col-md-8 col-sm-9 col-data_agente">
+            
             <div class="row" style="justify-content: flex-end;" >
               <div class="col-xl-10 col-lg-9 col-md-8 col-sm-9">
                 <ul class="info_agente" style="text-align: right;">
@@ -84,19 +85,25 @@
                   <li>$correo@agente.com$</li>
                 </ul>
               </div>
+
               <div class="col-xl-2 col-lg-3 col-md-4 col-sm-3" style="text-align: left !important; display: block;">
                 <img src="https://i.ibb.co/LrkbXDw/AUTOEVALUA-CASGRIS.png" alt="Logo Autoevalua" style="height: auto; width: 11em; position: absolute; top: 1em; right: 1em;">
               </div>
+
             </div>
           </div> 
         </div>
       </div>
     </div>
 
+
+<!--VERSIÓN WEB DE HEADER CON MENU LATERAL QUE EN RESPONSIVE SE VUELVE CENTRAL Y DROPDOWN-->
     <div class="show-on-mobile">
+      
       <div>
         <img src="mxbfull_logo.png" alt="" style="height: auto; width: 15em; padding-bottom: 12px;">
       </div>
+
       <div class="row" style="margin-right: 0px; background-color: #f7f7f7; padding-top: 12px;">
         <div class="col-sm-12" style="padding-right: 0px;">
           <ul class="info_agente" style="text-align: center;">
@@ -113,199 +120,163 @@
       <div class="row" style="margin-right: 0px;">
         <div class="col-12" style="padding-right: 0px;">
           <nav class="navbar" style="background-color: #002868; color: #FFF; margin-bottom: 0px; min-height: 20px;">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mxcb-navbar-collapse-2" aria-expanded="false" style="margin: 0px; padding: 0px; padding-top: 5px; z-index: 99999;">
-              <i class="fa fa-bars" aria-hidden="true"></i>
-            </button>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="mxcb-navbar-collapse-2">
-            <ul class="nav navbar-nav submenu_qualitas_resp">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">General Conditions</a>
-                <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
-                  <li><a href="https://mexicocrossborder.com/dnis/pdfs/generalConditionsOnlineQualitas.pdf" target="_blank">Qualitas</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What to do in case of Accident?</a>
-                <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
-                  <li><a href="https://mexicocrossborder.com/dnis/pdfs/wtdinoa_QUALITAS2.pdf" target="_blank">Qualitas</a></li>
-                </ul>
-              </li>
-
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">States we hold surplus line broker licences:</a>
-                <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
-                  <li>LIC # 946598 ARIZONA</li>
-                  <li>LIC # 0D95560 CALIFORNIA</li>
-                  <li>LIC # 0100311529 ILLINOIS</li>
-                  <li>LIC # 699776 NEVADA</li>
-                  <li>LIC # 1040418 WASHINGTON</li>
-                  <li>LIC #100011806 NEW MEXICO</li>
-                  <li>LIC # 15740053 TEXAS</li>
-                </ul>
-              </li>
-              <br>
-              <li class="dropdown">
-                <button class="btn btn_chat"><i class="fa fa-comments-o" aria-hidden="true">&nbsp;</i>Chat Support</button>
-              </li>
-
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-        </div>
-        
-      </div>
-
-
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </header>
-  
-  <hr style="background-color: #002868; height: 9px; margin-top: 0px; border-top: none;">
-  
-
-  <div id="wrapper">
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12">
-          <p style="color: #002868; font-size: 1.4em; text-align: center; font-weight: bold;"> Your quotation has been saved with number: XXXXX</p>
-          <h5 style="color: #ce1126; text-align: center; font-weight: bold; text-transform: uppercase;">Premiums shown are the least expensive</h5>
-        </div>
-      </div>
-      
-      <hr style="width: 50%; background-color: #002868; margin-top: 0px; height: 3px;">
-    </div>
-
-
-
-    <div id="login" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button data-dismiss="modal" class="close">×</button>
-
-            <div class="centerTable">
-
-              <div class="tablaCotizador">
-                
-                <table class="modalTable">
-                  <tr style="background-color: #f7f7f7;">
-                    <th class="modal_title_left"> You're protected by: </th>
-                    <th style="text-align: center;  padding: 10px;"><img src="https://mexicocrossborder.com/dnis/imagenes/4.jpg" style="width: 55px; height: auto;"></th>
-                    <th style="text-align: center;  padding: 10px;"><img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg" style="width: 55px; height: auto;"></th>
-                    <th style="text-align: center;  padding: 10px;"><img src="https://mexicocrossborder.com/dnis/imagenes/2.jpg" style="width: 55px; height: auto;"></th>
-                    <th style="text-align: center;  padding: 10px;"><img src="https://mexicocrossborder.com/dnis/imagenes/1.jpg" style="width: 55px; height: auto;"></th>
-                  </tr>
-                  <tr class="modal_signs">
-                    <th class="modal_title_left"> Collision </th>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                  </tr>
-                  <tr class="modal_signs">
-                    <th class="modal_title_left"> Total Theft </th>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                  </tr>
-                  <tr class="modal_signs">
-                    <th class="modal_title_left"> Property Damage and Bodily Injury </th>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                  </tr>
-                  <tr class="modal_signs">
-                    <th class="modal_title_left"> Medical Expense </th>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                  </tr>
-                  <tr class="modal_signs">
-                    <th class="modal_title_left"> Legal Defense </th>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                  </tr>
-                  <tr class="modal_signs">
-                    <th class="modal_title_left"> Automobile Assistance </th>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                  </tr>
-                  <tr class="modal_signs">
-                    <th class="modal_title_left"> Vandalism </th>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                  </tr>
-                  <tr class="modal_signs">
-                    <th class="modal_title_left"> Deductible Waiver for UM </th>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                  </tr>
-                  <tr class="modal_signs">
-                    <th class="modal_title_left"> Partial Theft </th>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                    <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
-                    <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
-                  </tr>
-                </table>
+            
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mxcb-navbar-collapse-2" aria-expanded="false" style="margin: 0px; padding: 0px; padding-top: 5px; z-index: 99999;">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
               </div>
-              <div class="row justify-content-center" style="margin-top: 1em;">
-              <!--PARA EL DEMO, USARÉ UNA ETIQUETA A HREF, PARA LA VERSIÓN REAL, SE USA LA ETIQUETA BUTTON QUE AQUÍ ESTÁ COMENTADA, POR FAVOR, DESCOMENTAR Y USAR LA SIGUIENTE LÍNEA:
-              <div class="separador"><button type="submit" class="btn btn-next">NEXT</button></div>
-            --> <div class="separador"><a href="index.html" class="btn btn-next">PRINT</a></div>
+
+              <div class="collapse navbar-collapse" id="mxcb-navbar-collapse-2">
+                <ul class="nav navbar-nav submenu_qualitas_resp">
+                  
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">General Conditions</a>
+                    <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
+                      <li><a href="https://mexicocrossborder.com/dnis/pdfs/generalConditionsOnlineQualitas.pdf" target="_blank">Qualitas</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What to do in case of Accident?</a>
+                    <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
+                      <li><a href="https://mexicocrossborder.com/dnis/pdfs/wtdinoa_QUALITAS2.pdf" target="_blank">Qualitas</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">States we hold surplus line broker licences:</a>
+                    <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
+                      <li>LIC # 946598 ARIZONA</li>
+                      <li>LIC # 0D95560 CALIFORNIA</li>
+                      <li>LIC # 0100311529 ILLINOIS</li>
+                      <li>LIC # 699776 NEVADA</li>
+                      <li>LIC # 1040418 WASHINGTON</li>
+                      <li>LIC #100011806 NEW MEXICO</li>
+                      <li>LIC # 15740053 TEXAS</li>
+                    </ul>
+                  </li><br>
+
+                  <li class="dropdown">
+                    <button class="btn btn_chat"><i class="fa fa-comments-o" aria-hidden="true">&nbsp;</i>Chat Support</button>
+                  </li>
+
+                </ul>
               </div>
+
             </div>
 
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--FIN DE LA SECCIÓN HEADER-->
+<hr style="background-color: #002868; height: 9px; margin-top: 0px; border-top: none;">
 
 
+<!-- PRIMER MODAL PARA "VIEW DETAILS"-->
+  <div id="login" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button data-dismiss="modal" class="close">×</button>
 
+          <div class="centerTable">
 
-
+            <div class="tablaCotizador">
+              
+              <table class="modalTable">
+                <tr style="background-color: #f7f7f7;">
+                  <th class="modal_title_left"> You're protected by: </th>
+                  <th style="text-align: center;  padding: 10px;"><img src="https://mexicocrossborder.com/dnis/imagenes/4.jpg" style="width: 55px; height: auto;"></th>
+                  <th style="text-align: center;  padding: 10px;"><img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg" style="width: 55px; height: auto;"></th>
+                  <th style="text-align: center;  padding: 10px;"><img src="https://mexicocrossborder.com/dnis/imagenes/2.jpg" style="width: 55px; height: auto;"></th>
+                  <th style="text-align: center;  padding: 10px;"><img src="https://mexicocrossborder.com/dnis/imagenes/1.jpg" style="width: 55px; height: auto;"></th>
+                </tr>
+                <tr class="modal_signs">
+                  <th class="modal_title_left"> Collision </th>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr class="modal_signs">
+                  <th class="modal_title_left"> Total Theft </th>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr class="modal_signs">
+                  <th class="modal_title_left"> Property Damage and Bodily Injury </th>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr class="modal_signs">
+                  <th class="modal_title_left"> Medical Expense </th>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr class="modal_signs">
+                  <th class="modal_title_left"> Legal Defense </th>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr class="modal_signs">
+                  <th class="modal_title_left"> Automobile Assistance </th>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr class="modal_signs">
+                  <th class="modal_title_left"> Vandalism </th>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr class="modal_signs">
+                  <th class="modal_title_left"> Deductible Waiver for UM </th>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+                <tr class="modal_signs">
+                  <th class="modal_title_left"> Partial Theft </th>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                  <td><i class="fa fa-check" aria-hidden="true" style="color: #18B346;"></i></td>
+                  <td><i class="fa fa-close" aria-hidden="true" style="color: #ce1126;"></i></td>
+                </tr>
+              </table>
+            </div>
+            <div class="row justify-content-center" style="margin-top: 1em;">
+<!--PARA EL DEMO, USARÉ UNA ETIQUETA A HREF, PARA LA VERSIÓN REAL, SE USA LA ETIQUETA BUTTON QUE AQUÍ ESTÁ COMENTADA, POR FAVOR, DESCOMENTAR Y USAR LA SIGUIENTE LÍNEA:
+            <div class="separador"><button type="submit" class="btn btn-next">NEXT</button></div>
+-->           <div class="separador"><a href="index.html" class="btn btn-next">PRINT</a></div>
+            </div>
           </div>
         </div>
-      </div>  
-    </div>
-
-
-
-    <div id="view_modal2" class="modal fade" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content" style="width: inherit;">
-          <div class="modal-body">
-            <button data-dismiss="modal" class="close">×</button>
+      </div>
+    </div>  
+  </div>
+<!-- TERMINA PRIMER MODAL PARA "VIEW DETAILS"-->
+<!-- EMPIEZA SEGUNDO MODAL PARA "VIEW COVERAGE"-->
+  <div id="view_modal2" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content" style="width: inherit;">
+        <div class="modal-body">
+          <button data-dismiss="modal" class="close">×</button>
 
             <div class="centerTable">
 
@@ -339,11 +310,6 @@
                   </tr>
                 </table>
               </div>
-
-
-
-
-
 
               <div class="tablaCotizador" style="margin-top: 2em;">
                 
@@ -400,7 +366,6 @@
                 </table>
               </div>
 
-
               <div class="row" style="margin-top: 1em;">
                 <div class="col-12">
                   <p style="padding: 10px;">
@@ -422,10 +387,12 @@
                   </div>
                 </div>
               </div>
+
               <div class="row justify-content-center" style="margin-top: 1em;">
-              <!--PARA EL DEMO, USARÉ UNA ETIQUETA A HREF, PARA LA VERSIÓN REAL, SE USA LA ETIQUETA BUTTON QUE AQUÍ ESTÁ COMENTADA, POR FAVOR, DESCOMENTAR Y USAR LA SIGUIENTE LÍNEA:
+<!--PARA EL DEMO, USARÉ UNA ETIQUETA A HREF, PARA LA VERSIÓN REAL, SE USA LA ETIQUETA BUTTON QUE AQUÍ ESTÁ COMENTADA, POR FAVOR, DESCOMENTAR Y USAR LA SIGUIENTE LÍNEA:
               <div class="separador"><button type="submit" class="btn btn-next">NEXT</button></div>
-            --> <div class="separador"><a href="index.html" class="btn btn-next">PRINT</a></div>
+-->
+                <div class="separador"><a href="index.html" class="btn btn-next">PRINT</a></div>
               </div>
             </div>
 
@@ -436,9 +403,23 @@
 
 
 
+<!--INICIA CONTENIDO-->
+  <div id="wrapper">
 
+<!--TITULO DE LA PÁGINA CON SUB-INDICACIÓN-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <p style="color: #002868; font-size: 1.4em; text-align: center; font-weight: bold;"> Your quotation has been saved with number: XXXXX</p>
+          <h5 style="color: #ce1126; text-align: center; font-weight: bold; text-transform: uppercase;">Premiums shown are the least expensive</h5>
+        </div>
+      </div>
+      
+      <hr style="width: 50%; background-color: #002868; margin-top: 0px; height: 3px;">
+    </div>
 
     <div class="container-fluid">
+<!--LINEA DE "ONLY" CON UNA ASEGURADORA-->
       <div class="row" style="margin-bottom: 1em;">
         <div class="col-12">
           <ul class="nav justify-content-center onlyAseguradoras">
@@ -457,7 +438,7 @@
           </ul>
         </div>
       </div>
-
+<!--FORMULARIO PARA CAMBIAR VALORES EN LA COTIZACIÓN-->
       <div class="row justify-content-center">
         <div class="col-xl-9 col-lg-10 col-md-12 col-sm-12">
           <form class="form-horizontal formulario" action="next" method="post">
@@ -476,7 +457,7 @@
                 <div class="row form-group">
                   <label class="col-sm-4 control-label" for="days">ACV:</label>
                   <div class="col-sm-6">
-                    <select class="form-control" name="days">
+                    <select class="form-control" name="ACV">
                       <option value="0">Choose Term...</option>
                     </select>
                   </div>
@@ -486,7 +467,7 @@
                 <div class="row form-group">
                   <label class="col-sm-4 control-label" for="ACV">Liability Limits:</label>
                   <div class="col-sm-6">
-                    <select class="form-control" name="ACV">
+                    <select class="form-control" name="Liability Limits">
                       <option value="0">Choose value...</option>
                     </select>
                     <div class="row" style="float: right;">
@@ -501,119 +482,98 @@
           </form>
         </div>
       </div>
-
+<!--INICIA TABLA CON LAS COTIZACIONES-->
       <div class="row items-align-center">
-          <div class="col-12">
-            <div class="centerTable">
+        <div class="col-12">
+          <div class="centerTable">
 
-              <div>
-                <table cellpadding="0" cellspacing="2" bgcolor="white" border="1" style="border-color:#f7f7f7;">
-                  <tbody>
-                    <tr>
-                      <th class="title_top">&nbsp;</th>
-                      <th class="title_top">10 Days</th>
-                      <th class="title_top">Semiannual</th>
-                      <th class="title_top">Annual</th>
-                    </tr>
-                    <tr>
-                      <th class="title_left">Liability<br>
-                        <a class="login-trigger" href="#" data-target="#login" data-toggle="modal" class="lick_cotiza">View Coverage</a>
-                      </th>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
-                        <input type="radio" name="tarifa" value="46" checked="">&nbsp;&nbsp;$&nbsp;50.20<br>
-                        <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
-                        <input type="radio" name="tarifa" value="47">&nbsp;&nbsp;$&nbsp;66.86<br>
-                        <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
-                        <input type="radio" name="tarifa" value="48">&nbsp;&nbsp;$&nbsp;105.47<br>
-                        <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="title_left">Full Coverage<br>
-                        <a class="login-trigger" href="#" data-target="#login" data-toggle="modal" class="lick_cotiza">View Coverage</a>
-                      </th>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/2.jpg"><br>
-                        <input type="radio" name="tarifa" value="41">&nbsp;&nbsp;$&nbsp;110.01<br>
-                        <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
-                        <input type="radio" name="tarifa" value="50">&nbsp;&nbsp;$&nbsp;235.24<br>
-                        <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/4.jpg"><br>
-                        <input type="radio" name="tarifa" value="34">&nbsp;&nbsp;$&nbsp;309.02<br>
-                        <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th class="title_left">Premium Full Coverage<br>
-                        <a class="login-trigger" href="#" data-target="#login" data-toggle="modal" class="lick_cotiza">View Coverage</a>
-                      </th>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
-                        <input type="radio" name="tarifa" value="52">&nbsp;&nbsp;$&nbsp;170.68<br>
-                        <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
-                        <input type="radio" name="tarifa" value="53">&nbsp;&nbsp;$&nbsp;268.92<br>
-                        <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                      <td class="cotizando" align="center">
-                        <img src="https://mexicocrossborder.com/dnis/imagenes/2.jpg"><br>
-                        <input type="radio" name="tarifa" value="45">&nbsp;&nbsp;$&nbsp;400.91<br>
-                        <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal" class="lick_cotiza"> View Detail&nbsp;</a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <div>
+              <table cellpadding="0" cellspacing="2" bgcolor="white" border="1" style="border-color:#f7f7f7;">
+                <tbody>
+                  <tr>
+                    <th class="title_top">&nbsp;</th>
+                    <th class="title_top">10 Days</th>
+                    <th class="title_top">Semiannual</th>
+                    <th class="title_top">Annual</th>
+                  </tr>
+                  <tr>
+                    <th class="title_left">Liability<br>
+                      <a class="login-trigger" href="#" data-target="#login" data-toggle="modal">View Coverage</a>
+                    </th>
+                    <td class="cotizando" align="center">
+                      <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
+                      <input type="radio" name="tarifa" value="46" checked="">&nbsp;&nbsp;$&nbsp;50.20<br>
+                      <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal"> View Detail&nbsp;</a>
+                    </td>
+                    <td class="cotizando" align="center">
+                      <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
+                      <input type="radio" name="tarifa" value="47">&nbsp;&nbsp;$&nbsp;66.86<br>
+                      <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal"> View Detail&nbsp;</a>
+                    </td>
+                    <td class="cotizando" align="center">
+                      <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
+                      <input type="radio" name="tarifa" value="48">&nbsp;&nbsp;$&nbsp;105.47<br>
+                      <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal"> View Detail&nbsp;</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="title_left">Full Coverage<br>
+                      <a class="login-trigger" href="#" data-target="#login" data-toggle="modal">View Coverage</a>
+                    </th>
+                    <td class="cotizando" align="center">
+                      <img src="https://mexicocrossborder.com/dnis/imagenes/2.jpg"><br>
+                      <input type="radio" name="tarifa" value="41">&nbsp;&nbsp;$&nbsp;110.01<br>
+                      <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal"> View Detail&nbsp;</a>
+                    </td>
+                    <td class="cotizando" align="center">
+                      <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
+                      <input type="radio" name="tarifa" value="50">&nbsp;&nbsp;$&nbsp;235.24<br>
+                      <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal"> View Detail&nbsp;</a>
+                    </td>
+                    <td class="cotizando" align="center">
+                      <img src="https://mexicocrossborder.com/dnis/imagenes/4.jpg"><br>
+                      <input type="radio" name="tarifa" value="34">&nbsp;&nbsp;$&nbsp;309.02<br>
+                      <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal"> View Detail&nbsp;</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="title_left">Premium Full Coverage<br>
+                      <a class="login-trigger" href="#" data-target="#login" data-toggle="modal">View Coverage</a>
+                    </th>
+                    <td class="cotizando" align="center">
+                      <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
+                      <input type="radio" name="tarifa" value="52">&nbsp;&nbsp;$&nbsp;170.68<br>
+                      <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal"> View Detail&nbsp;</a>
+                    </td>
+                    <td class="cotizando" align="center">
+                      <img src="https://mexicocrossborder.com/dnis/imagenes/5.jpg"><br>
+                      <input type="radio" name="tarifa" value="53">&nbsp;&nbsp;$&nbsp;268.92<br>
+                      <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal"> View Detail&nbsp;</a>
+                    </td>
+                    <td class="cotizando" align="center">
+                      <img src="https://mexicocrossborder.com/dnis/imagenes/2.jpg"><br>
+                      <input type="radio" name="tarifa" value="45">&nbsp;&nbsp;$&nbsp;400.91<br>
+                      <a class="login-trigger" href="#" data-target="#view_modal2" data-toggle="modal"> View Detail&nbsp;</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-
-
-
-            
-
-
-
-
-            <div class="row justify-content-center" style="margin-top: 1em;">
-            <!--PARA EL DEMO, USARÉ UNA ETIQUETA A HREF, PARA LA VERSIÓN REAL, SE USA LA ETIQUETA BUTTON QUE AQUÍ ESTÁ COMENTADA, POR FAVOR, DESCOMENTAR Y USAR LA SIGUIENTE LÍNEA:
+          </div>
+<!--BOTONES ADELANTE | REGRESAR -->
+          <div class="row justify-content-center" style="margin-top: 1em;">
+<!--PARA EL DEMO, USARÉ UNA ETIQUETA A HREF, PARA LA VERSIÓN REAL, SE USA LA ETIQUETA BUTTON QUE AQUÍ ESTÁ COMENTADA, POR FAVOR, DESCOMENTAR Y USAR LA SIGUIENTE LÍNEA:
             <div class="separador"><button type="submit" class="btn btn-next">NEXT</button></div>
-          --><div class="separador"><a href="index.html" class="btn btn-next">BACK</a></div>&nbsp;&nbsp;&nbsp;
-              <div class="separador"><a href="pant3.html" class="btn btn-next">BUY</a></div>
-            </div>
-
-
-
+-->
+            <div class="separador"><a href="index.html" class="btn btn-next">BACK</a></div>&nbsp;&nbsp;&nbsp;
+            <div class="separador"><a href="pant3.html" class="btn btn-next">BUY</a></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- INICIA EL FOOTER -->
   <footer style="bottom: 0; position: fixed; width: 100%; z-index: 999; border-top: 3px solid #002868; background-color: #FFF;">
     <div class="container">
       <div class="row">
@@ -627,49 +587,25 @@
 
 
 
-<script type="text/javascript">
+<script type="text/javascript" for="ABRIR Y CERRAR MENÚ">
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+</script>
+
+<script type="text/javascript" for="DESPLIEGUE DE CALENDARIO">
     $(function () {
     $('#datetimepicker1').datetimepicker();
  });
-
     $(function () {
     $('#datetimepicker2').datetimepicker();
  });
-</script>
-
-<script type="text/javascript">
-  function appeartow() {
-
-  var checkBox = document.getElementById("checkboxtow");
-  // Get the output text
-  var text = document.getElementById("choosetow");
-
-  // If the checkbox is checked, display the output text
-  if (checkBox.checked == true){
-    text.style.display = "flex";
-  } else {
-    text.style.display = "none";
-  }
-}
-</script>
-
-<script type="text/javascript">
-function showDiv(divId, element)
-{
-    document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
-}
-</script>
-
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
 </script>
 
 
@@ -677,345 +613,6 @@ function closeNav() {
 <script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
 </body>
-
-
-
-
-<style type="text/css">
-
-  .sidebar {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #002868;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #FFF;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  color: #f5f5f5;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-.openbtn {
-  border-radius: 5px;
-  border: 1px solid #002868;
-  font-size: 1em;
-  cursor: pointer;
-  background-color: #FFF;
-  color: #002868;
-  padding: 10px 15px;
-}
-
-.openbtn:hover {
-  background-color: #002868 !important;
-  color: #FFF !important;
-}
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px;
-}
-
-#wrapper {
-  height: auto;
-  position: relative;
-  padding-bottom: 130px;
-}
-
-.glyphicon{
-  color: #ce1126 !important;
-}
-
-  .show-on-mobile{
-    display: none;
-    visibility: hidden;
-}
-}
-
-.hide-on-mobile{
-    display: block;
-    visibility: visible;
-}
-
-.col-data_agente{
-  float: right !important;
-}
-
-.info_agente{
-    position: relative;
-    color: #002868;
-    right: 1em;
-    text-align: center;
-    list-style: none;
-    font-weight: bold;
-}
-
-.info_agente > li {
-  font-size: 13px;
-}
-
-.info_agente > li:first-child {
-    font-size: 14px; /* limits the scope of the previous rule */
-}
-
-.mxcb_menucliente ul{
-  background-color: #002868;
-}
-
-.mxcb_menucliente a li{
-  color: #dcdee2 !important
-  font-size: 12px;
-  text-align: center;
-}
-
-.mxcb_menucliente a:hover{
-  color: #FFF !important;
-
-}
-
-.submenu_qualitas a{
-  background-color: #002868 !important;
-}
-
-.submenu_qualitas a:hover{
-  background-color: #001d4c !important;
-  color: #f5f5f5 !important;
-}
-
-.submenu_qualitas a:focus{
-  background-color: #001d4c !important;
-  color: #F5F5F5 !important;
-}
-
-ul.submenu_qualitas ul.dropdown-menu a{
-  color: #FFF !important;
-  background-color: #001d4c !important;
-}
-
-ul.submenu_qualitas ul.dropdown-menu a:hover{
-  background-color: #900a19 !important;
-}
-
-.onlyAseguradoras a {
-  color: #006847;
-}
-
-
-/*TABLA COTIZADOR*/
-div.centerTable{
-  text-align: center;
-}
-
-div.centerTable table{
-  margin: 0 auto;
-}
-
-
-.title_top{
-  font-size: 13px;
-  text-align: center;
-  padding: 15px;
-  background-color: #002868;
-  color: #FFF;
-}
-
-.title_left{
-  font-size: 13px;
-  text-align: center;
-  padding: 14px;
-  color: #002868;
-}
-
-.title_left a{
-  font-size: 12px;
-  color: #ce1126;
-}
-
-td.cotizando{
-  font-size: 16px;
-  text-align: center;
-  padding: 18px 50px;
-  font-weight: 500;
-  color: #002868;
-}
-
-td.cotizando a{
-  font-size: 11px;
-  color: #757575;
-  text-decoration: underline;
-}
-
-td.cotizando img{
-  width: 65px;
-  height: auto;
-}
-
-table.modalTable, .modalTable td,th{
-  border: solid 1px #f5f5f5;
-}
-
-.modal_title_left{
-  font-size: 13px;
-  padding: 7px;
-  color: #FFF;
-  background-color: #002868;
-}
-
-.modal_signs td{
-  font-size: 1em;
-  padding: 7px;
-}
-
-
-.modal_signs td > i{
-  font-size: 1.5em;
-}
-
-
-.modal_title_top{
-  font-size: 13px;
-  text-align: center;
-  padding: 6px;
-  background-color: #ce1126;
-  color: #FFF;
-}
-
-.modal_cover td{
-  color: #565656;
-  font-size: 1em;
-  padding: 7px;
-}
-
-.modal2_title_left{
-  font-size: 13px;
-  padding: 7px;
-  color: #FFF;
-  background-color: #002868;
-  text-align: center;
-}
-
-br.br_show-on-mobile{
-        display: none;
-        visibility: hidden;
-}
-
-/*RESPONSIVE*/
-
-.submenu_qualitas_resp a{
-  background-color: #002868 !important;
-  color: #FFF;
-}
-
-.submenu_qualitas_resp a:hover{
-  background-color: #001d4c !important;
-  color: #f5f5f5 !important;
-}
-
-.submenu_qualitas_resp a:focus{
-  background-color: #001d4c !important;
-  color: #F5F5F5 !important;
-}
-
-ul.submenu_qualitas_resp ul.dropdown-menu a{
-  color: #FFF !important;
-  background-color: #001d4c !important;
-}
-
-ul.submenu_qualitas_resp ul.dropdown-menu a:hover{
-  background-color: #900a19 !important;
-}
-
-
-
-.licencias p{
-  color: #FFF;
-  font-size: 11px;
-  margin-bottom: 0px;
-  margin-left: 10px;
-}
-
-.btn-next{
-  background-color: #ce1126;
-  color: #FFF;
-  width: 10em;
-  height: 2.5em;
-  font-size: 16px;
-}
-
-.btn-next:hover{
-  background-color: #900a19;
-  color: #FFF;
-  border: solid 1px #ce1126;
-}
-
-.btn_chat{
-  background-color: #FFF !important;
-  height: 40px;
-  font-size: 15px;
-  color: #002868;
-  margin-left: 10px !important;
-}
-
-.btn_chat:hover{
-  background-color: #1b3e75 !important;
-  border: 1px solid #FFF !important;
-  color: #FFF !important;
-}
-
-#hidetow{
-  display: none;
-}
-
-@media (max-width: 768px) {
-
-    .show-on-mobile{
-        display: block;
-        visibility: visible;
-        text-align: center;
-    }    
-    .hide-on-mobile{
-        display: none;
-        visibility: hidden;
-    }
-
-    td.cotizando{
-      font-size: 14px;
-      padding: 8px 10px;
-    }
-
-    td.cotizando img{
-      width: 55px;
-    }
-
-    br.br_show-on-mobile{
-        display: block;
-        visibility: visible;
-        text-align: center;
-    } 
-
-
-}
-
-
-</style>
 </html>

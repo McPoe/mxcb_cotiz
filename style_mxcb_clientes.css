@@ -1,0 +1,389 @@
+/*MENÚ LATERAL, HEADER Y GENERALES*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #002868;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f5f5f5;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.mxcb_menucliente ul{
+  background-color: #002868;
+}
+
+.mxcb_menucliente a li{
+  color: #dcdee2 !important
+  font-size: 12px;
+  text-align: center;
+}
+
+.mxcb_menucliente a:hover{
+  color: #FFF !important;
+}
+
+.submenu_qualitas a{
+  background-color: #002868 !important;
+}
+
+.submenu_qualitas a:hover{
+  background-color: #001d4c !important;
+  color: #f5f5f5 !important;
+}
+
+.submenu_qualitas a:focus{
+  background-color: #001d4c !important;
+  color: #F5F5F5 !important;
+}
+
+ul.submenu_qualitas ul.dropdown-menu a{
+  color: #FFF !important;
+  background-color: #001d4c !important;
+}
+
+ul.submenu_qualitas ul.dropdown-menu a:hover{
+  background-color: #900a19 !important;
+}
+
+/* MENU EN RESPONSIVE */
+.submenu_qualitas_resp a{
+  background-color: #002868 !important;
+  color: #FFF;
+}
+
+.submenu_qualitas_resp a:hover{
+  background-color: #001d4c !important;
+  color: #f5f5f5 !important;
+}
+
+.submenu_qualitas_resp a:focus{
+  background-color: #001d4c !important;
+  color: #F5F5F5 !important;
+}
+
+ul.submenu_qualitas_resp ul.dropdown-menu a{
+  color: #FFF !important;
+  background-color: #001d4c !important;
+}
+
+ul.submenu_qualitas_resp ul.dropdown-menu a:hover{
+  background-color: #900a19 !important;
+}
+
+/*INFORMACIÓN DEL AGENTE*/
+.col-data_agente{
+  float: right !important;
+}
+
+.info_agente{
+    position: relative;
+    color: #002868;
+    right: 1em;
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+}
+
+.info_agente > li {
+  font-size: 13px;
+}
+
+.info_agente > li:first-child {
+    font-size: 14px;
+}
+
+/*BOTONES*/
+.openbtn {
+  border-radius: 5px;
+  border: 1px solid #002868;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #FFF;
+  color: #002868;
+  padding: 10px 15px;
+}
+
+.openbtn:hover {
+  background-color: #002868 !important;
+  color: #FFF !important;
+}
+
+.btn_chat{
+  background-color: #FFF !important;
+  height: 40px;
+  font-size: 15px;
+  color: #002868;
+  margin-left: 10px !important;
+}
+
+.btn_chat:hover{
+  background-color: #1b3e75 !important;
+  border: 1px solid #FFF !important;
+  color: #FFF !important;
+}
+
+.btn-next{
+  background-color: #ce1126;
+  color: #FFF;
+  width: 10em;
+  height: 2.5em;
+  font-size: 16px;
+}
+
+.btn-next:hover{
+  background-color: #900a19;
+  color: #FFF;
+  border: solid 1px #ce1126;
+}
+
+.licencias p{
+  color: #FFF;
+  font-size: 11px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+
+/*-----DE LA PRIMERA PANTALLA | INDEX ----*/
+/*CONTENIDO*/
+#wrapper {
+  height: auto;
+  position: relative;
+  padding-bottom: 130px;
+}
+
+/*ICONOS*/
+.glyphicon{
+  color: #ce1126 !important;
+}
+
+#hidetow{
+  display: none;
+}
+
+
+/*-----DE LA SEGUNDA PANTALLA | TABLA COTIZADOR ----*/
+.onlyAseguradoras a {
+  color: #006847;
+}
+
+/*TABLA COTIZADOR*/
+div.centerTable{
+  text-align: center;
+}
+
+div.centerTable table{
+  margin: 0 auto;
+}
+
+.title_top{
+  font-size: 13px;
+  text-align: center;
+  padding: 15px;
+  background-color: #002868;
+  color: #FFF;
+}
+
+.title_left{
+  font-size: 13px;
+  text-align: center;
+  padding: 14px;
+  color: #002868;
+}
+
+.title_left a{
+  font-size: 12px;
+  color: #ce1126;
+}
+
+td.cotizando{
+  font-size: 16px;
+  text-align: center;
+  padding: 18px 50px;
+  font-weight: 500;
+  color: #002868;
+}
+
+td.cotizando a{
+  font-size: 11px;
+  color: #757575;
+  text-decoration: underline;
+}
+
+td.cotizando img{
+  width: 65px;
+  height: auto;
+}
+
+/*ESTILOS DE MODAL "VIEW DETAILS"*/
+table.modalTable, .modalTable td,th{
+  border: solid 1px #f5f5f5;
+}
+
+.modal_title_left{
+  font-size: 13px;
+  padding: 7px;
+  color: #FFF;
+  background-color: #002868;
+}
+
+.modal_signs td{
+  font-size: 1em;
+  padding: 7px;
+}
+
+.modal_signs td > i{
+  font-size: 1.5em;
+}
+
+.modal_title_top{
+  font-size: 13px;
+  text-align: center;
+  padding: 6px;
+  background-color: #ce1126;
+  color: #FFF;
+}
+
+.modal_cover td{
+  color: #565656;
+  font-size: 1em;
+  padding: 7px;
+}
+
+/*/*ESTILOS DE MODAL "VIEW COVERAGE"*/
+.modal2_title_left{
+  font-size: 13px;
+  padding: 7px;
+  color: #FFF;
+  background-color: #002868;
+  text-align: center;
+}
+
+br.br_show-on-mobile{
+        display: none;
+        visibility: hidden;
+}
+
+/*-----DE LA TERCERA PANTALLA | FORMULARIOS PARA PÓLIZA ----*/
+.asterisk{
+  color: #ce1126;
+  text-align: left !important;
+  padding-left: 0px;
+  font-size: 20px;
+}
+
+
+/*ESTILOS DEL MODAL DE POLÍTICAS DE CANCELACIÓN*/
+#divFormTow, #divFormInsurance{
+  display: none;
+}
+
+.modalcancel td{
+  font-size: 12px;
+}
+
+.modalcancel_title_top{
+  font-size: 13px;
+  padding: 7px;
+  color: #FFF;
+  background-color: #002868;
+  text-align: center;
+}
+
+/*-----DE LA CUARTA PANTALLA | FORMULARIOS PARA PÓLIZA ----*/
+/*INPUT DEL CHECK DE LA PÓLIZA*/
+.input_noborder{
+  border: none !important;
+  box-shadow: inset 0px -3px 0px rgba(0,0,0,.075) !important;
+}
+/*INPUTS ESPECIALES PARA MM/AA Y CVC*/
+.inputcc{
+  height: 34px;
+  padding: 6px;
+  font-size: 14px;
+  line-height: 1.42;
+  color: #555;
+  background-color: #FFF;
+  background-image: none;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 1px rgb(0,0,0,0.075);
+}
+
+.hide-on-mobile+.asterisk{
+  display: inline-block;
+}
+
+/*PRE MOBILE*/
+br.br_show-on-mobile{
+  display: none;
+  visibility: hidden;
+}
+
+.show-on-mobile{
+    display: none;
+    visibility: hidden;
+}
+
+.hide-on-mobile{
+    display: block;
+    visibility: visible;
+}
+
+.hide-on-mobilecc{
+    visibility: visible;
+}
+
+/*TODOS LOS MEDIAQUERIES*/
+@media (max-width: 768px) {
+  .show-on-mobile{
+    display: block !important;
+    visibility: visible !important;
+    text-align: center !important;
+  }    
+  .hide-on-mobile{
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  td.cotizando{
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  td.cotizando img{
+    width: 55px;
+  }
+
+  br.br_show-on-mobile{
+    display: block;
+    visibility: visible;
+    text-align: center;
+  } 
+
+  .labelr{
+    text-align: right !important;
+  }
+}
