@@ -173,6 +173,21 @@ ul.submenu_qualitas_resp ul.dropdown-menu a:hover{
   border: solid 1px #002868;
 }
 
+.openbtnresp {
+  border-radius: 5px;
+  border: 1px solid #002868;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #FFF;
+  color: #002868;
+  padding: 10px 15px;
+}
+
+.openbtnresp:hover {
+  background-color: #002868 !important;
+  color: #FFF !important;
+}
+
 .d-block > .btn{
   display: block !important;
 }
@@ -190,6 +205,7 @@ ul.submenu_qualitas_resp ul.dropdown-menu a:hover{
   height: auto;
   position: relative;
   padding-bottom: 130px;
+  margin-top: 1em;
 }
 
 /*ICONOS*/
@@ -239,7 +255,7 @@ div.centerTable table{
 td.cotizando{
   font-size: 16px;
   text-align: center;
-  padding: 18px 50px;
+  padding: 5px 45px 10px;
   font-weight: 500;
   color: #002868;
 }
