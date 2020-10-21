@@ -97,83 +97,90 @@
     </div>
 
 
-<!--VERSIÓN WEB DE HEADER CON MENU LATERAL QUE EN RESPONSIVE SE VUELVE CENTRAL Y DROPDOWN-->
+<!--VERSIÓN mobile DE HEADER CON MENU LATERAL QUE EN RESPONSIVE SE VUELVE CENTRAL Y DROPDOWN-->
     <div class="show-on-mobile">
-      
-      <div>
-        <img src="mxbfull_logo.png" alt="" style="height: auto; width: 15em; padding-bottom: 12px;">
-      </div>
-
-      <div class="row" style="margin-right: 0px; background-color: #f7f7f7; padding-top: 12px;">
-        <div class="col-sm-12" style="padding-right: 0px;">
-          <ul class="info_agente" style="text-align: center;">
-            <li>AUTHORIZED AGENT</li>
-            <hr style="margin: 5px;">
-            <li>$nombre_agente$</li>
-            <li>$direccion_agente$<br>$direccion_agente$</li>
-            <li style="padding-top: 10px;">$teléfono_agente$</li>
-            <li>$correo@agente.com$</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row" style="margin-right: 0px;">
-        <div class="col-12" style="padding-right: 0px;">
-          <nav class="navbar" style="background-color: #002868; color: #FFF; margin-bottom: 0px; min-height: 20px;">
-            
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mxcb-navbar-collapse-2" aria-expanded="false" style="margin: 0px; padding: 0px; padding-top: 5px; z-index: 99999;">
-                  <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
-              </div>
-
-              <div class="collapse navbar-collapse" id="mxcb-navbar-collapse-2">
-                <ul class="nav navbar-nav submenu_qualitas_resp">
-                  
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">General Conditions</a>
-                    <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
-                      <li><a href="https://mexicocrossborder.com/dnis/pdfs/generalConditionsOnlineQualitas.pdf" target="_blank">Qualitas</a></li>
-                    </ul>
-                  </li>
-                  
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What to do in case of Accident?</a>
-                    <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
-                      <li><a href="https://mexicocrossborder.com/dnis/pdfs/wtdinoa_QUALITAS2.pdf" target="_blank">Qualitas</a></li>
-                    </ul>
-                  </li>
-
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">States we hold surplus line broker licences:</a>
-                    <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
-                      <li>LIC # 946598 ARIZONA</li>
-                      <li>LIC # 0D95560 CALIFORNIA</li>
-                      <li>LIC # 0100311529 ILLINOIS</li>
-                      <li>LIC # 699776 NEVADA</li>
-                      <li>LIC # 1040418 WASHINGTON</li>
-                      <li>LIC #100011806 NEW MEXICO</li>
-                      <li>LIC # 15740053 TEXAS</li>
-                    </ul>
-                  </li><br>
-
-                  <li class="dropdown">
-                    <button class="btn btn_chat"><i class="fa fa-comments-o" aria-hidden="true">&nbsp;</i>Chat Support</button>
-                  </li>
-
+      <div class="container-fluid">
+        
+        <div class="row">
+          <div class="col-sm-5 col-xs-5">
+            <div>
+              <img src="mxbfull_logo.png" alt="" style="height: auto; width: 12em; padding-bottom: 12px;">
+            </div>
+          </div>
+          <div class="col-sm-7 col-xs-7" style="padding-right: 0px;">
+            <div class="row" style="margin-right: 0px;">
+              <div class="col-sm-12" style="padding-right: 0px;">
+                <ul class="info_agente">
+                  <li>AUTHORIZED AGENT</li>
+                  <hr style="margin: 5px;">
+                  <li>$nombre_agente$</li>
+                  <li style="padding-top: 10px;">$teléfono_agente$</li>
                 </ul>
               </div>
-
             </div>
+          </div>
+        </div>
 
-          </nav>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-xs-3" style="text-align: left;">
+                <button class="openbtnresp" data-toggle="collapse" data-target="#mxcb-navbar-collapse-2" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;MENU</button>
+              </div>
+              <div class="col-xs-9" style="padding: 0px;">
+                <hr style="border: 2px solid #002868;">  
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                <nav class="navbar" style="background-color: #002868; border: none; color: #FFF; margin-bottom: 0px; min-height: 0px !important; padding: 0px !important;">
+                  <div class="collapse navbar-collapse" id="mxcb-navbar-collapse-2">
+                    <ul class="nav navbar-nav submenu_qualitas_resp">
+                      
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">General Conditions</a>
+                        <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
+                          <li><a href="https://mexicocrossborder.com/dnis/pdfs/generalConditionsOnlineQualitas.pdf" target="_blank">Qualitas</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What to do in case of Accident?</a>
+                        <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
+                          <li><a href="https://mexicocrossborder.com/dnis/pdfs/wtdinoa_QUALITAS2.pdf" target="_blank">Qualitas</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">States we hold surplus line broker licences:</a>
+                        <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
+                          <li>LIC # 946598 ARIZONA</li>
+                          <li>LIC # 0D95560 CALIFORNIA</li>
+                          <li>LIC # 0100311529 ILLINOIS</li>
+                          <li>LIC # 699776 NEVADA</li>
+                          <li>LIC # 1040418 WASHINGTON</li>
+                          <li>LIC #100011806 NEW MEXICO</li>
+                          <li>LIC # 15740053 TEXAS</li>
+                        </ul>
+                      </li><br>
+
+                      <li class="dropdown">
+                        <button class="btn btn_chat"><i class="fa fa-comments-o" aria-hidden="true">&nbsp;</i>Chat Support</button>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </header>
 <!--FIN DE LA SECCIÓN HEADER-->
-<hr style="background-color: #002868; height: 9px; margin-top: 0px; border-top: none;">
+<hr class="hide-on-mobile" style="background-color: #002868; height: 9px; margin-top: 0px; border-top: none;">
 
 
 <!--INICIA CONTENIDO-->
