@@ -1,0 +1,110 @@
+a{
+	text-decoration: none !important;
+}
+
+.infogif{
+     max-width: 100%;
+     height: auto;
+}
+
+.btn-qr {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 1px;
+    height: auto;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-bottom: 30px;
+    border: 2px solid #002868;
+    background: #002868 !important;
+    color: #FFF !important;
+    text-decoration: none;
+    width: 75% !important;
+    padding: 15px;
+}
+
+.btn-qr:focus, .btn-qr:hover {
+    color: #002868 !important;
+    background-color: #FEFEFE !important;
+}
+.btn-wa {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 1px;
+    height: auto;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-bottom: 15px;
+    border: 2px solid #32ac2c;
+    background: #FEFEFE !important;
+    color: #32ac2c !important;
+    text-decoration: none;
+    width: 75% !important;
+    padding: 10px;
+}
+.btn-wa:focus, .btn-wa:hover {
+    color: #FFF !important;
+    background-color: #32ac2c !important;
+}
+.btn-tw {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 1px;
+    height: auto;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-bottom: 15px;
+    border: 2px solid #3db0f2;
+    background: #FEFEFE !important;
+    color: #3db0f2 !important;
+    text-decoration: none;
+    width: 75% !important;
+    padding: 10px;
+}
+.btn-tw:focus, .btn-tw:hover {
+    color: #FFF !important;
+    background-color: #3db0f2 !important;
+}
+.btn-fb {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 1px;
+    height: auto;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-bottom: 15px;
+    border: 2px solid #4767b5;
+    background: #FEFEFE !important;
+    color: #4767b5 !important;
+    text-decoration: none;
+    width: 75% !important;
+    padding: 10px;
+}
+.btn-fb:focus, .btn-fb:hover {
+    color: #FFF !important;
+    background-color: #4767b5 !important;
+}
+.btn-mail {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 1px;
+    height: auto;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin-bottom: 15px;
+    border: 2px solid #002868;
+    background: #FEFEFE !important;
+    color: #002868 !important;
+    text-decoration: none;
+    width: 75% !important;
+    padding: 10px;
+}
+.btn-mail:focus, .btn-mail:hover {
+    color: #FEFEFE !important;
+    background-color: #002868 !important;
+}
