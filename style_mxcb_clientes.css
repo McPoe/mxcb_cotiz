@@ -133,10 +133,15 @@ ul.submenu_qualitas_resp ul.dropdown-menu a:hover{
 
 .btn_chat{
   background-color: #FFF !important;
+  width: 40px;
   height: 40px;
-  font-size: 15px;
-  color: #002868;
+  color: #ce1126;
   margin-left: 10px !important;
+  padding-top: 0px !important
+}
+
+.btn_chat i{
+  font-size: 2em;
 }
 
 .btn_chat:hover{
