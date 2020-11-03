@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Cotizador MXCB 7-PRUEBAS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style_mxcb_clientes.css">
+  <link rel="stylesheet" type="text/css" href="other.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  
+  <header style="margin-top: 1em;">
+
+<!--VERSIÓN WEB DE HEADER CON MENU LATERAL QUE EN RESPONSIVE SE VUELVE CENTRAL Y DROPDOWN-->
+    <div class="hide-on-mobile">
+      <div class="container-fluid"> 
+        <div class="row">
+          
+          <div class="col-lg-5 col-md-4 col-sm-3 ">
+          
+            <div id="mySidebar" class="sidebar">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+              <div class="mxcb_menucliente">
+
+                <div class="collapse navbar-collapse" style="padding-left: 0px; ">
+                  <ul class="nav navbar-nav submenu_qualitas">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">General Conditions</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="https://mexicocrossborder.com/dnis/pdfs/generalConditionsOnlineQualitas.pdf" target="_blank">Qualitas</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What to do in case of Accident?</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="https://mexicocrossborder.com/dnis/pdfs/wtdinoa_QUALITAS2.pdf" target="_blank">Qualitas</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="btn-group" style="margin-top: 1.3em;">
+                  <button class="btn btn_chat"><i class="fa fa-comments-o" aria-hidden="true">&nbsp;</i>Chat Support</button>
+                </div>
+                
+                 <div class="btn-group licencias" style="margin-left: 10px; padding-top: 150%;">
+                  <p>LIC # 946598 ARIZONA</p>
+                  <p>LIC # 0D95560 CALIFORNIA</p>
+                  <p>LIC # 0100311529 ILLINOIS</p>
+                  <p>LIC # 699776 NEVADA</p>
+                  <p>LIC # 1040418 WASHINGTON</p>
+                  <p>LIC #100011806 NEW MEXICO</p>
+                  <p>LIC # 15740053 TEXAS</p>
+                </div>
+
+              </div>
+            </div>
+              
+
+            <div id="main">
+              <img src="mxbfull_logo.png" alt="" style="height: auto; width: 14em;"><br><br>
+              <button class="openbtn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;MENU</button>
+            </div>
+          
+          </div>
+
+          <div class="col-lg-7 col-md-8 col-sm-9 col-data_agente">
+            
+            <div class="row" style="justify-content: flex-end;" >
+              <div class="col-xl-10 col-lg-9 col-md-8 col-sm-9">
+                <ul class="info_agente" style="text-align: right;">
+                  <li>AUTHORIZED AGENT</li>
+                  <hr style="margin: 5px;">
+                  <li>$nombre_agente$</li>
+                  <li>$direccion_agente$<br>$direccion_agente$</li>
+                  <li style="padding-top: 10px;">$teléfono_agente$</li>
+                  <li>$correo@agente.com$</li>
+                </ul>
+              </div>
+
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-3" style="text-align: left !important; display: block;">
+                <img src="https://i.ibb.co/LrkbXDw/AUTOEVALUA-CASGRIS.png" alt="Logo Autoevalua" style="height: auto; width: 11em; position: absolute; top: 1em; right: 1em;">
+              </div>
+
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+
+<!--VERSIÓN mobile DE HEADER CON MENU LATERAL QUE EN RESPONSIVE SE VUELVE CENTRAL Y DROPDOWN-->
+    <div class="show-on-mobile">
+      <div class="container-fluid">
+        
+        <div class="row">
+          <div class="col-sm-5 col-xs-5">
+            <div>
+              <img src="mxbfull_logo.png" alt="" style="height: auto; width: 12em; padding-bottom: 12px;">
+            </div>
+          </div>
+          <div class="col-sm-7 col-xs-7" style="padding-right: 0px;">
+            <div class="row" style="margin-right: 0px;">
+              <div class="col-sm-12" style="padding-right: 0px;">
+                <ul class="info_agente">
+                  <li>AUTHORIZED AGENT</li>
+                  <hr style="margin: 5px;">
+                  <li>$nombre_agente$</li>
+                  <li style="padding-top: 10px;">$teléfono_agente$</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="row">
+              <div class="col-xs-3" style="text-align: left;">
+                <button class="openbtnresp" data-toggle="collapse" data-target="#mxcb-navbar-collapse-2" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;MENU</button>
+              </div>
+              <div class="col-xs-9" style="padding: 0px;">
+                <hr style="border: 2px solid #002868;">  
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+                <nav class="navbar" style="background-color: #002868; border: none; color: #FFF; margin-bottom: 0px; min-height: 0px !important; padding: 0px !important;">
+                  <div class="collapse navbar-collapse" id="mxcb-navbar-collapse-2">
+                    <ul class="nav navbar-nav submenu_qualitas_resp">
+                      
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">General Conditions</a>
+                        <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
+                          <li><a href="https://mexicocrossborder.com/dnis/pdfs/generalConditionsOnlineQualitas.pdf" target="_blank">Qualitas</a></li>
+                        </ul>
+                      </li>
+                      
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">What to do in case of Accident?</a>
+                        <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
+                          <li><a href="https://mexicocrossborder.com/dnis/pdfs/wtdinoa_QUALITAS2.pdf" target="_blank">Qualitas</a></li>
+                        </ul>
+                      </li>
+
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">States we hold surplus line broker licences:</a>
+                        <ul class="dropdown-menu" style="text-align: center; color: #FFF; font-size: 11px;">
+                          <li>LIC # 946598 ARIZONA</li>
+                          <li>LIC # 0D95560 CALIFORNIA</li>
+                          <li>LIC # 0100311529 ILLINOIS</li>
+                          <li>LIC # 699776 NEVADA</li>
+                          <li>LIC # 1040418 WASHINGTON</li>
+                          <li>LIC #100011806 NEW MEXICO</li>
+                          <li>LIC # 15740053 TEXAS</li>
+                        </ul>
+                      </li><br>
+
+                      <li class="dropdown">
+                        <button class="btn btn_chat"><i class="fa fa-comments-o" aria-hidden="true">&nbsp;</i>Chat Support</button>
+                      </li>
+
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--FIN DE LA SECCIÓN HEADER-->
+<hr class="hide-on-mobile" style="background-color: #002868; height: 9px; margin-top: 0px; border-top: none;">
+
+<!--INICIA CONTENIDO-->
+  <div id="wrapper">
+    <div class="container cuerpoContenido text-center" style="padding-bottom: 25px;">
+      <div class="col-12 col-lg-10 offset-lg-1">
+          <div class="row">
+            <div class="col-lg-12">
+              <p style="color: #002868; font-size: 1.4em; text-align: center; font-weight: bold;">Share your MXCrossBorder personal quote link:</p>
+            </div>
+          </div>
+          <hr style="width: 50%; background-color: #002868; margin-top: 0px; height: 3px;">
+          <div class="row" style="margin-top: 30px;">
+              <div class="col">
+                  <img src="https://i.ibb.co/DbjZXJw/info-B2-C-MXCB-v-P.gif" title="info gif share" alt="Gif Info Share" class="infogif">
+              </div>
+          </div>
+          
+          <div class="row" style="margin-top: 20px;">
+              <div class="col-6">
+                  <img src="https://i.ibb.co/HD79T3Q/Captura-de-Pantalla-2020-10-22-a-la-s-11-00-02.png" alt="QR Code">
+                      <a href="##" download="" target="_blank"> <div class="btn-qr" style="margin: 0 auto;">DOWNLOAD MY QR CODE</div></a>
+              </div>
+              <div class="col-6 text-center" style="margin-top: 10px;">
+                  <!-- Facebook -->
+                  <div class="row" style="margin-top: 5px;">
+                      <div class="col-12 text-center">
+                          <a href="##" target="_blank" title="Twittear"><div class="btn-fb"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Facebook</div></a>
+                      </div>
+                  </div>
+                  <!--Whatsapp-->
+                  <div class="row">
+                      <div class="col">
+                          <a href="##" target="_blank" title="Compartir">
+                              <div class="btn-wa"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Whatsapp</div>    
+                          </a>
+                      </div>
+                  </div>
+                  <!-- Twitter -->
+                  <div class="row" style="margin-top: 5px;">
+                      <div class="col">
+                          <a href="##" target="_blank" title="Compartir">
+                              <div class="btn-tw"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;Twitter</div>
+                          </a>
+                      </div>
+                  </div>
+
+                  <!--? Mail a Ecard ---->
+                  <div class="row" style="margin-top: 5px;">
+                      <div class="col-12 text-center">
+                          <a href="Este enlace debe enviar a la página para enviar ecard por mail" title="Email">
+                              <div class="btn-mail"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>&nbsp;&nbsp;SEND BY Email</div>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  </div>
+
+
+
+<!-- INICIA EL FOOTER -->
+  <footer style="bottom: 0; position: fixed; width: 100%; z-index: 999; border-top: 3px solid #002868; background-color: #FFF;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <p class="text-center" style="margin: 7px 0px; color: #002868; font-size: 12px; font-weight: 500;">MXCrossBorder powered by Dynamic Network®</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<script type="text/javascript" for="ABRIR Y CERRAR MENÚ">
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+</script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+
+</body>
+
+</html>
